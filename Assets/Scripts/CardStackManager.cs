@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using TMPro;
+using UnityEngine.UI;
 
 public class CardStackManager : MonoBehaviour
 {
@@ -13,8 +14,17 @@ public class CardStackManager : MonoBehaviour
     [Header("Game Info")]
     private string gameMode = "easy";
     private int totalCards;
+    private List<Sprite> cardPictures;
 
     void Start()
+    {
+        SetTotalCards();
+        GetCards();
+        PlaceCards();
+        SetCardPics();
+    }
+
+    void SetTotalCards()
     {
         totalCards = gameMode switch
         {
@@ -23,7 +33,6 @@ public class CardStackManager : MonoBehaviour
             "hard" => 32,
             _ => throw new System.NotImplementedException(),
         };
-        GetCards();
     }
 
     void GetCards()
@@ -34,16 +43,44 @@ public class CardStackManager : MonoBehaviour
         }
     }
 
-    void Update()
+    void PlaceCards()
+    {
+        int totalPics = totalCards / 2;
+        cardPictures = new List<Sprite>();
+        for (int i = 0; i < totalPics; i++) { cardPictures.Add(pictureList[i]); }
+        for (int i = 0; i < totalPics; i++) { cardPictures.Add(pictureList[i]); }
+    }
+
+    void ShuffleCards()
     {
 
     }
 
-    void RandomizeCards()
+    void SetCardPics()
+    {
+        for (int i = 0; i < Cards.Count; i++)
+        {
+            GameObject card = Cards[i];
+            Image cardPic = card.transform.Find("Canvas/CardPicture").GetComponent<Image>();
+            cardPic.sprite = cardPictures[i];
+        }
+    }
+
+    //void RandomizePictures()
+    //{
+    //    int totalPics = totalCards/2;
+    //    cardPictures = new Sprite[totalPics];
+
+        
+
+    //    // random card id from range
+
+    //    // repeat id twice
+    //}
+
+    void Update()
     {
 
-        // random card id
-        // repeat id twice
     }
 
 }
