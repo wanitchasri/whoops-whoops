@@ -4,9 +4,16 @@ using UnityEngine;
 
 public class CardManager : MonoBehaviour
 {
-    RectTransform rectTransform; 
-    bool cardClicked;
-    float rotateSpeed = 0.5f;
+    [Header("Card Info")]
+    public string cardIndicator;
+
+    [Header("Flags")]
+    public bool cardClicked;
+    public bool cardMatched;
+
+    [Header("Rotation Info")]
+    private RectTransform rectTransform;
+    private float rotateSpeed = 0.5f;
 
     void Start()
     {
@@ -32,11 +39,11 @@ public class CardManager : MonoBehaviour
         }
         else
         {
-            StartCoroutine(RotateCard(-180f));
+            StartCoroutine(FlipCard(-180f));
         }
     }
 
-    IEnumerator RotateCard(float rotateAngle)
+    IEnumerator FlipCard(float rotateAngle)
     {
         float time = 0;
         while (time < 1)
@@ -48,4 +55,8 @@ public class CardManager : MonoBehaviour
         }
     }
 
+    //set indicator of each card - picture
+    // indicator whether this card is matched
+    // if the card is not matched, can be clicked again
+    // if the card is matched, cannot be clickeed
 }

@@ -68,12 +68,10 @@ public class CardStackManager : MonoBehaviour
             GameObject card = Cards[i];
             Image cardPic = card.transform.Find("Canvas/CardPicture").GetComponent<Image>();
             cardPic.sprite = cardPictures[i];
+            card.GetComponent<CardManager>().cardIndicator = cardPic.sprite.name;
         }
     }
 
-    void Update()
-    {
 
-    }
 
 }
