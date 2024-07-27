@@ -13,7 +13,7 @@ public class CardManager : MonoBehaviour
 
     [Header("Rotation Info")]
     private RectTransform rectTransform;
-    private float rotateSpeed = 0.5f;
+    private float rotateSpeed = 1f;
 
     void Start()
     {
