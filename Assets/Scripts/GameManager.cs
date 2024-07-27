@@ -19,11 +19,6 @@ public class GameManager : MonoBehaviour
     private List<GameObject> clickedCards;
     private float flipBackDelay = 1f;
 
-    // allow only 2 cards to be clicked at a time
-    // trigger event when card is clicked 
-    // oncardclicked -> alert to gamemanager
-    // 
-
     private void Start()
     {
         clickedCards = new List<GameObject>();    
@@ -91,27 +86,6 @@ public class GameManager : MonoBehaviour
         // temporary score
         score = matches;
     }
-
-    //private void VerifyCardMatch()
-    //{ 
-    //    CardManager firstCardManager = clickedCards[0].GetComponent<CardManager>();
-    //    CardManager secondCardManager = clickedCards[1].GetComponent<CardManager>();
-
-    //    if (firstCardManager.cardIndicator == secondCardManager.cardIndicator)
-    //    {
-    //        matches++;
-    //        Destroy(firstCardManager);
-    //        Destroy(secondCardManager);
-    //    }
-    //    else
-    //    {
-    //        StartCoroutine(firstCardManager.FlipCard(0f));
-    //        StartCoroutine(secondCardManager.FlipCard(0f));
-    //    }
-
-    //    clickedCardsQty = 0;
-    //    clickedCards.Clear();
-    //}
 
     public void OnHomeButtonClicked()
     {
