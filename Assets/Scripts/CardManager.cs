@@ -22,28 +22,28 @@ public class CardManager : MonoBehaviour
 
     void Update()
     {
-        if (!cardClicked)
-        {
-            if (Input.GetMouseButtonDown(0))
-            {
-                Vector3 mousePosition = Input.mousePosition;
-                Ray ray = Camera.main.ScreenPointToRay(mousePosition);
-                if (Physics.Raycast(ray, out RaycastHit hit))
-                {
-                    if (hit.collider.gameObject.name == gameObject.name)
-                    {
-                        cardClicked = true;
-                    }
-                }
-            }
-        }
-        else
-        {
-            StartCoroutine(FlipCard(-180f));
-        }
+        //if (!cardClicked)
+        //{
+        //    if (Input.GetMouseButtonDown(0))
+        //    {
+        //        Vector3 mousePosition = Input.mousePosition;
+        //        Ray ray = Camera.main.ScreenPointToRay(mousePosition);
+        //        if (Physics.Raycast(ray, out RaycastHit hit))
+        //        {
+        //            if (hit.collider.gameObject.name == gameObject.name)
+        //            {
+        //                cardClicked = true;
+        //            }
+        //        }
+        //    }
+        //}
+        //else
+        //{
+        //    StartCoroutine(FlipCard(-180f));
+        //}
     }
 
-    IEnumerator FlipCard(float rotateAngle)
+    public IEnumerator FlipCard(float rotateAngle)
     {
         float time = 0;
         while (time < 1)
