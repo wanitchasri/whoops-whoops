@@ -1,8 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.SceneManagement;
-using TMPro;
 using UnityEngine.UI;
 
 public class CardStackManager : MonoBehaviour
@@ -21,6 +19,7 @@ public class CardStackManager : MonoBehaviour
         SetTotalCards();
         GetCards();
         PlaceCards();
+        Shuffle(cardPictures);
         SetCardPics();
     }
 
@@ -51,9 +50,15 @@ public class CardStackManager : MonoBehaviour
         for (int i = 0; i < totalPics; i++) { cardPictures.Add(pictureList[i]); }
     }
 
-    void ShuffleCards()
+    void Shuffle<T>(List<T> inputList)
     {
-
+        for (int i = 0; i < inputList.Count; i++)
+        {
+            T temp = inputList[i];
+            int rand = Random.Range(i, inputList.Count);
+            inputList[i] = inputList[rand];
+            inputList[rand] = temp;
+        }
     }
 
     void SetCardPics()
@@ -65,18 +70,6 @@ public class CardStackManager : MonoBehaviour
             cardPic.sprite = cardPictures[i];
         }
     }
-
-    //void RandomizePictures()
-    //{
-    //    int totalPics = totalCards/2;
-    //    cardPictures = new Sprite[totalPics];
-
-        
-
-    //    // random card id from range
-
-    //    // repeat id twice
-    //}
 
     void Update()
     {
