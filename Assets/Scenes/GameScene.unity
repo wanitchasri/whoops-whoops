@@ -349,6 +349,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9eedc4bc586853c479e0fc624e4c765c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  cardClicked: 0
+  cardMatched: 0
+  cardIndicator: 0
 --- !u!1 &59349924
 GameObject:
   m_ObjectHideFlags: 0
@@ -361,7 +364,7 @@ GameObject:
   - component: {fileID: 59349927}
   - component: {fileID: 59349926}
   m_Layer: 5
-  m_Name: CardPicture
+  m_Name: CardPicture (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -434,7 +437,7 @@ GameObject:
   - component: {fileID: 98304011}
   - component: {fileID: 98304010}
   m_Layer: 5
-  m_Name: CardPicture
+  m_Name: CardPicture (16)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -507,7 +510,7 @@ GameObject:
   - component: {fileID: 140519004}
   - component: {fileID: 140519003}
   m_Layer: 5
-  m_Name: CardPicture
+  m_Name: CardPicture (11)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -795,6 +798,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9eedc4bc586853c479e0fc624e4c765c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  cardClicked: 0
+  cardMatched: 0
+  cardIndicator: 0
 --- !u!1 &163520955
 GameObject:
   m_ObjectHideFlags: 0
@@ -883,7 +889,7 @@ GameObject:
   - component: {fileID: 191382477}
   - component: {fileID: 191382476}
   m_Layer: 5
-  m_Name: CardPicture
+  m_Name: CardPicture (13)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1209,6 +1215,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9eedc4bc586853c479e0fc624e4c765c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  cardClicked: 0
+  cardMatched: 0
+  cardIndicator: 0
 --- !u!1 &485840201
 GameObject:
   m_ObjectHideFlags: 0
@@ -1327,7 +1336,7 @@ GameObject:
   - component: {fileID: 504216912}
   - component: {fileID: 504216911}
   m_Layer: 5
-  m_Name: CardPicture
+  m_Name: CardPicture (4)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1777,7 +1786,7 @@ GameObject:
   - component: {fileID: 561023378}
   - component: {fileID: 561023377}
   m_Layer: 5
-  m_Name: CardPicture
+  m_Name: CardPicture (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1850,7 +1859,7 @@ GameObject:
   - component: {fileID: 631232709}
   - component: {fileID: 631232708}
   m_Layer: 5
-  m_Name: CardPicture
+  m_Name: CardPicture (5)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2273,6 +2282,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9eedc4bc586853c479e0fc624e4c765c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  cardClicked: 0
+  cardMatched: 0
+  cardIndicator: 0
 --- !u!1 &716984121
 GameObject:
   m_ObjectHideFlags: 0
@@ -2285,7 +2297,7 @@ GameObject:
   - component: {fileID: 716984124}
   - component: {fileID: 716984123}
   m_Layer: 5
-  m_Name: CardPicture
+  m_Name: CardPicture (9)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2941,6 +2953,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9eedc4bc586853c479e0fc624e4c765c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  cardClicked: 0
+  cardMatched: 0
+  cardIndicator: 0
 --- !u!1 &984666033
 GameObject:
   m_ObjectHideFlags: 0
@@ -2953,7 +2968,7 @@ GameObject:
   - component: {fileID: 984666036}
   - component: {fileID: 984666035}
   m_Layer: 5
-  m_Name: CardPicture
+  m_Name: CardPicture (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3335,6 +3350,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9eedc4bc586853c479e0fc624e4c765c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  cardClicked: 0
+  cardMatched: 0
+  cardIndicator: 0
 --- !u!1 &1126610501
 GameObject:
   m_ObjectHideFlags: 0
@@ -3460,6 +3478,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9eedc4bc586853c479e0fc624e4c765c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  cardClicked: 0
+  cardMatched: 0
+  cardIndicator: 0
 --- !u!1 &1167015814
 GameObject:
   m_ObjectHideFlags: 0
@@ -3709,7 +3730,7 @@ GameObject:
   - component: {fileID: 1224158153}
   - component: {fileID: 1224158152}
   m_Layer: 5
-  m_Name: CardPicture
+  m_Name: CardPicture (12)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3881,7 +3902,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1236168886}
-  - component: {fileID: 1236168885}
+  - component: {fileID: 1236168887}
   m_Layer: 0
   m_Name: GameManager
   m_TagString: Untagged
@@ -3889,18 +3910,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1236168885
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1236168884}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e89c7b21d78d42c4dbbdaec739904590, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!4 &1236168886
 Transform:
   m_ObjectHideFlags: 0
@@ -3914,8 +3923,23 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1236168887
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1236168884}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 31743c68c60fc10469c015ce49ab4f54, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ScoreText: {fileID: 516876644}
+  MatchesText: {fileID: 1179710349}
+  TurnsText: {fileID: 969951539}
 --- !u!1 &1241243610
 GameObject:
   m_ObjectHideFlags: 0
@@ -4041,6 +4065,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9eedc4bc586853c479e0fc624e4c765c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  cardClicked: 0
+  cardMatched: 0
+  cardIndicator: 0
 --- !u!1 &1264922288
 GameObject:
   m_ObjectHideFlags: 0
@@ -4166,6 +4193,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9eedc4bc586853c479e0fc624e4c765c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  cardClicked: 0
+  cardMatched: 0
+  cardIndicator: 0
 --- !u!1 &1280921308
 GameObject:
   m_ObjectHideFlags: 0
@@ -4280,7 +4310,7 @@ GameObject:
   - component: {fileID: 1345994730}
   - component: {fileID: 1345994729}
   m_Layer: 5
-  m_Name: CardPicture
+  m_Name: CardPicture (7)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4466,6 +4496,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9eedc4bc586853c479e0fc624e4c765c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  cardClicked: 0
+  cardMatched: 0
+  cardIndicator: 0
 --- !u!1 &1498057822
 GameObject:
   m_ObjectHideFlags: 0
@@ -4591,6 +4624,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9eedc4bc586853c479e0fc624e4c765c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  cardClicked: 0
+  cardMatched: 0
+  cardIndicator: 0
 --- !u!1 &1609803929
 GameObject:
   m_ObjectHideFlags: 0
@@ -4676,7 +4712,7 @@ GameObject:
   - component: {fileID: 1773739067}
   - component: {fileID: 1773739066}
   m_Layer: 5
-  m_Name: CardPicture
+  m_Name: CardPicture (8)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4822,7 +4858,7 @@ GameObject:
   - component: {fileID: 1806349975}
   - component: {fileID: 1806349974}
   m_Layer: 5
-  m_Name: CardPicture
+  m_Name: CardPicture (14)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4895,7 +4931,7 @@ GameObject:
   - component: {fileID: 1821556245}
   - component: {fileID: 1821556244}
   m_Layer: 5
-  m_Name: CardPicture
+  m_Name: CardPicture (15)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4966,6 +5002,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1905914906}
   - component: {fileID: 1905914905}
+  - component: {fileID: 1905914907}
   m_Layer: 0
   m_Name: CardLayout
   m_TagString: Untagged
@@ -5026,13 +5063,44 @@ RectTransform:
   - {fileID: 156764578}
   - {fileID: 1264922289}
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 1.4368, y: 0.9924}
   m_SizeDelta: {x: 13.0573, y: 9.9768}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1905914907
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1905914904}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e89c7b21d78d42c4dbbdaec739904590, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Cards: []
+  pictureList:
+  - {fileID: 21300000, guid: fb1a796f5e957cf4f97e88850c32884c, type: 3}
+  - {fileID: 21300000, guid: f80a013582435ff449eea898609f8bf9, type: 3}
+  - {fileID: 21300000, guid: 638fa9b33d872ab46bedf230d9178883, type: 3}
+  - {fileID: 21300000, guid: 9ba278c74c6c50b448ec06c9bdc8945e, type: 3}
+  - {fileID: 21300000, guid: 2b073f64bd0d37a49b89d5c851b1d449, type: 3}
+  - {fileID: 21300000, guid: fe48d7ed8f025f347963ef2ebdae18f4, type: 3}
+  - {fileID: 21300000, guid: 6bb9c6a44abd2184ea5f59bc908ac185, type: 3}
+  - {fileID: 21300000, guid: 91af5d85658803a49a0d85e87e1b52ce, type: 3}
+  - {fileID: 21300000, guid: 7696fbc55db22f4439bcdc57e80876a1, type: 3}
+  - {fileID: 21300000, guid: 94d4fec2e55011741a7d705244d379da, type: 3}
+  - {fileID: 21300000, guid: 3bc018554c5e4ad4fbe824347eb6ab7d, type: 3}
+  - {fileID: 21300000, guid: 279c4c76d492bf84fa563d23d236f572, type: 3}
+  - {fileID: 21300000, guid: 7248382282cf0a04099102ef5307d648, type: 3}
+  - {fileID: 21300000, guid: 70a310e1f10cde14abd397b5fba9899f, type: 3}
+  - {fileID: 21300000, guid: aa1fddb739664ae4b99d565591333db2, type: 3}
+  - {fileID: 21300000, guid: 0a8c9dd9f784fd546a6350bd00276267, type: 3}
+  - {fileID: 21300000, guid: 41e70ea1e033fc043a4d0b197e0f70df, type: 3}
 --- !u!1 &1908650244
 GameObject:
   m_ObjectHideFlags: 0
@@ -5260,6 +5328,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9eedc4bc586853c479e0fc624e4c765c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  cardClicked: 0
+  cardMatched: 0
+  cardIndicator: 0
 --- !u!1 &1932308246
 GameObject:
   m_ObjectHideFlags: 0
@@ -5407,7 +5478,7 @@ GameObject:
   - component: {fileID: 1950596499}
   - component: {fileID: 1950596498}
   m_Layer: 5
-  m_Name: CardPicture
+  m_Name: CardPicture (6)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5797,6 +5868,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9eedc4bc586853c479e0fc624e4c765c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  cardClicked: 0
+  cardMatched: 0
+  cardIndicator: 0
 --- !u!1 &1982217343
 GameObject:
   m_ObjectHideFlags: 0
@@ -5922,6 +5996,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9eedc4bc586853c479e0fc624e4c765c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  cardClicked: 0
+  cardMatched: 0
+  cardIndicator: 0
 --- !u!1 &1996360281
 GameObject:
   m_ObjectHideFlags: 0
@@ -6047,6 +6124,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9eedc4bc586853c479e0fc624e4c765c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  cardClicked: 0
+  cardMatched: 0
+  cardIndicator: 0
 --- !u!1 &2042135944
 GameObject:
   m_ObjectHideFlags: 0
@@ -6354,7 +6434,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1236168885}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: GameManager, Assembly-CSharp
         m_MethodName: OnHomeButtonClicked
         m_Mode: 1
@@ -6416,7 +6496,7 @@ GameObject:
   - component: {fileID: 2106139422}
   - component: {fileID: 2106139421}
   m_Layer: 5
-  m_Name: CardPicture
+  m_Name: CardPicture (10)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6602,3 +6682,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9eedc4bc586853c479e0fc624e4c765c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  cardClicked: 0
+  cardMatched: 0
+  cardIndicator: 0
