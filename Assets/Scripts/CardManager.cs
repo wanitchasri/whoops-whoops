@@ -5,9 +5,8 @@ using UnityEngine;
 public class CardManager : MonoBehaviour
 {
     RectTransform rectTransform; 
-    // float r;
     bool cardClicked;
-    float rotateSpeed = 1f;
+    float rotateSpeed = 0.5f;
 
     void Start()
     {
@@ -42,11 +41,10 @@ public class CardManager : MonoBehaviour
         float time = 0;
         while (time < 1)
         {
-            rectTransform.rotation = Quaternion.Slerp(rectTransform.rotation, Quaternion.Euler(0, rotateAngle, 0), Time.deltaTime * 1f);
+            rectTransform.rotation = Quaternion.Slerp(rectTransform.rotation, Quaternion.Euler(0, rotateAngle, 0), time);
             time += Time.deltaTime * rotateSpeed;
 
             yield return null;
-
         }
     }
 
