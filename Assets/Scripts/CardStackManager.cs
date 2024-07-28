@@ -36,7 +36,7 @@ public class CardStackManager : MonoBehaviour, IDataPersistence
         this.cardPictures = data.cardPictures;
         this.cardFlipInfo = data.cardFlipInfo;
 
-        ArrangeCardStack();
+        ArrangeCardStack(data.isNewGame);
     }
 
     void LoadCardFlipInfo()
@@ -71,12 +71,12 @@ public class CardStackManager : MonoBehaviour, IDataPersistence
         // ArrangeCardStack();
     }
 
-    void ArrangeCardStack()
+    void ArrangeCardStack(bool isNewGame)
     {
         SetTotalCards();
         GetCards();
         PlaceCards();
-        Shuffle(cardPictures);
+        if (isNewGame) { Shuffle(cardPictures); }
         SetCardPics();
     }
 

@@ -11,6 +11,7 @@ public class GameData
     public int combo;
     public List<Sprite> cardPictures;
     public List<int> cardFlipInfo;
+    public bool isNewGame;
 
     // default values
     public GameData()
@@ -21,5 +22,6 @@ public class GameData
         this.combo = 0;
         this.cardPictures = new List<Sprite>();
         this.cardFlipInfo = new List<int>();
+        this.isNewGame = true;
     }
 }

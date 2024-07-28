@@ -72,6 +72,7 @@ public class DataPersistenceManager : MonoBehaviour
         {
             NewGame();
         }
+        else { gameData.isNewGame = false; }
 
         foreach (IDataPersistence dataPersistenceObj in dataPersistenceObjects)
         {

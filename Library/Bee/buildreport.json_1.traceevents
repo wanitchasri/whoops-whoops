@@ -1,506 +1,451 @@
 { "pid": 0, "tid": -1, "ph": "M", "name": "process_name", "args": { "name": "BeeDriver" } },
 { "pid": 0, "tid": -1, "ph": "M", "name": "process_sort_index", "args": { "sort_index": "-2" } },
 { "pid": 0, "tid": 1, "ph": "M", "name": "thread_name", "args": { "name": "" } },
-{ "pid": 0, "tid": 1, "ts": 1721995004955714, "dur": 1439982, "ph": "X", "name": "Build Player", "args": {} },
-{ "pid": 0, "tid": 1, "ts": 1721995004956020, "dur": 15265, "ph": "X", "name": "WriteBuildProgramData", "args": {} },
-{ "pid": 0, "tid": 1, "ts": 1721995004971287, "dur": 31367, "ph": "X", "name": "Run Backend", "args": {} },
-{ "pid": 0, "tid": 1, "ts": 1721995005002656, "dur": 238176, "ph": "X", "name": "BuildProgram", "args": {} },
-{ "pid": 0, "tid": 1, "ts": 1721995005240833, "dur": 1141524, "ph": "X", "name": "Run Backend", "args": {} },
-{ "pid": 0, "tid": 1, "ts": 1721995006382359, "dur": 13336, "ph": "X", "name": "Finish", "args": {} },
-{ "pid": 0, "tid": 1, "ts": 1721995006396014, "dur": 10, "ph": "X", "name": "", "args": {} },
+{ "pid": 0, "tid": 1, "ts": 1722177181913416, "dur": 1155950, "ph": "X", "name": "Build Player", "args": {} },
+{ "pid": 0, "tid": 1, "ts": 1722177181913665, "dur": 14962, "ph": "X", "name": "WriteBuildProgramData", "args": {} },
+{ "pid": 0, "tid": 1, "ts": 1722177181928630, "dur": 47234, "ph": "X", "name": "Run Backend", "args": {} },
+{ "pid": 0, "tid": 1, "ts": 1722177181975865, "dur": 784980, "ph": "X", "name": "BuildProgram", "args": {} },
+{ "pid": 0, "tid": 1, "ts": 1722177182760848, "dur": 293453, "ph": "X", "name": "Run Backend", "args": {} },
+{ "pid": 0, "tid": 1, "ts": 1722177183054303, "dur": 15061, "ph": "X", "name": "Finish", "args": {} },
+{ "pid": 0, "tid": 1, "ts": 1722177183069751, "dur": 13, "ph": "X", "name": "", "args": {} },
+{ "cat":"", "pid":12345, "tid":0, "ts":0, "ph":"M", "name":"process_name", "args": { "name":"bee_backend" } }
+,{ "pid":12345, "tid":0, "ts":1722177181953675, "dur":1245, "ph":"X", "name": "DriverInitData",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1722177181954929, "dur":214, "ph":"X", "name": "Tundra",  "args": { "detail":"RemoveStaleOutputs" }}
+,{ "pid":12345, "tid":0, "ts":1722177181955166, "dur":16, "ph":"X", "name": "Tundra",  "args": { "detail":"PrepareNodes" }}
+,{ "pid":12345, "tid":0, "ts":1722177181955183, "dur":402, "ph":"X", "name": "Tundra",  "args": { "detail":"BuildQueueInit" }}
+,{ "pid":12345, "tid":0, "ts":1722177181955607, "dur":474, "ph":"X", "name": "EnqueueRequestedNodes",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1722177181956081, "dur":1, "ph":"X", "name": "SortWorkingStack",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1722177181959741, "dur":185, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1722177181959926, "dur":60, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1722177181959986, "dur":5, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1722177181959991, "dur":7, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1722177181959998, "dur":2, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1722177181960000, "dur":6, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1722177181960006, "dur":2, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1722177181960008, "dur":7, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1722177181960015, "dur":2, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1722177181960017, "dur":5, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1722177181960022, "dur":2, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1722177181960024, "dur":6, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1722177181960030, "dur":2, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1722177181960032, "dur":5, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1722177181960037, "dur":2, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1722177181960039, "dur":6, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1722177181960045, "dur":2, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1722177181960047, "dur":5, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1722177181960052, "dur":2, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1722177181960054, "dur":5, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1722177181960059, "dur":2, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1722177181960061, "dur":6, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1722177181960067, "dur":2, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1722177181960069, "dur":8, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1722177181960077, "dur":0, "ph":"X", "name": "SharedResourceDestroy",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1722177181960077, "dur":1, "ph":"X", "name": "BuildQueueDestroyTail",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1722177181960097, "dur":1186, "ph":"X", "name": "Tundra",  "args": { "detail":"Write AllBuiltNodes" }}
+,{ "pid":12345, "tid":1, "ts":1722177181955829, "dur":258, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1722177181956093, "dur":3641, "ph":"X", "name": "CheckDagSignatures",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1722177181955889, "dur":221, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1722177181956110, "dur":3671, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1722177181955853, "dur":244, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1722177181956097, "dur":3715, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1722177181955879, "dur":225, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1722177181956104, "dur":3690, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1722177181955917, "dur":200, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1722177181956117, "dur":3660, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1722177181955946, "dur":179, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1722177181956125, "dur":3642, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1722177181955977, "dur":153, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1722177181956130, "dur":3641, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1722177181956029, "dur":113, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1722177181956142, "dur":3604, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":9, "ts":1722177181956000, "dur":136, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":9, "ts":1722177181956137, "dur":3616, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":10, "ts":1722177181956069, "dur":79, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":10, "ts":1722177181956148, "dur":3594, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":11, "ts":1722177181956104, "dur":1, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":11, "ts":1722177181956105, "dur":3685, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":12, "ts":1722177181956129, "dur":1, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":12, "ts":1722177181956130, "dur":3629, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1722177181962557, "dur":356, "ph":"X", "name": "ProfilerWriteOutput" }
+,{ "pid": 0, "tid": 1, "ts": 1722177183069837, "dur": 330, "ph": "X", "name": "backend_profiler0.traceevents", "args": {} },
 { "pid": 35942, "tid": -1, "ph": "M", "name": "process_name", "args": { "name": "netcorerun.dll" } },
 { "pid": 35942, "tid": -1, "ph": "M", "name": "process_sort_index", "args": { "sort_index": "-1" } },
 { "pid": 35942, "tid": 1, "ph": "M", "name": "thread_name", "args": { "name": "" } },
-{ "pid": 35942, "tid": 1, "ts": 1721995005106203, "dur": 121656, "ph": "X", "name": "BuildProgram", "args": {} },
-{ "pid": 35942, "tid": 1, "ts": 1721995005107261, "dur": 49164, "ph": "X", "name": "BuildProgramContextConstructor", "args": {} },
-{ "pid": 35942, "tid": 1, "ts": 1721995005208272, "dur": 4445, "ph": "X", "name": "OutputData.Write", "args": {} },
-{ "pid": 35942, "tid": 1, "ts": 1721995005212719, "dur": 15134, "ph": "X", "name": "Backend.Write", "args": {} },
-{ "pid": 35942, "tid": 1, "ts": 1721995005213466, "dur": 13827, "ph": "X", "name": "JsonToString", "args": {} },
-{ "pid": 35942, "tid": 1, "ts": 1721995005232431, "dur": 1315, "ph": "X", "name": "", "args": {} },
-{ "pid": 35942, "tid": 1, "ts": 1721995005231566, "dur": 2204, "ph": "X", "name": "Write chrome-trace events", "args": {} },
-{ "pid": 0, "tid": 1, "ts": 1721995006396070, "dur": 172, "ph": "X", "name": "buildprogram0.traceevents", "args": {} },
+{ "pid": 35942, "tid": 1, "ts": 1722177182580201, "dur": 167441, "ph": "X", "name": "BuildProgram", "args": {} },
+{ "pid": 35942, "tid": 1, "ts": 1722177182581353, "dur": 61067, "ph": "X", "name": "BuildProgramContextConstructor", "args": {} },
+{ "pid": 35942, "tid": 1, "ts": 1722177182728417, "dur": 5104, "ph": "X", "name": "OutputData.Write", "args": {} },
+{ "pid": 35942, "tid": 1, "ts": 1722177182733524, "dur": 14111, "ph": "X", "name": "Backend.Write", "args": {} },
+{ "pid": 35942, "tid": 1, "ts": 1722177182734191, "dur": 12829, "ph": "X", "name": "JsonToString", "args": {} },
+{ "pid": 35942, "tid": 1, "ts": 1722177182752115, "dur": 1354, "ph": "X", "name": "", "args": {} },
+{ "pid": 35942, "tid": 1, "ts": 1722177182751246, "dur": 2249, "ph": "X", "name": "Write chrome-trace events", "args": {} },
+{ "pid": 0, "tid": 1, "ts": 1722177183070214, "dur": 213, "ph": "X", "name": "buildprogram0.traceevents", "args": {} },
 { "cat":"", "pid":12345, "tid":0, "ts":0, "ph":"M", "name":"process_name", "args": { "name":"bee_backend" } }
-,{ "pid":12345, "tid":0, "ts":1721995005280907, "dur":892, "ph":"X", "name": "DriverInitData",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1721995005281810, "dur":59, "ph":"X", "name": "Tundra",  "args": { "detail":"RemoveStaleOutputs" }}
-,{ "pid":12345, "tid":0, "ts":1721995005281887, "dur":14, "ph":"X", "name": "Tundra",  "args": { "detail":"PrepareNodes" }}
-,{ "pid":12345, "tid":0, "ts":1721995005281902, "dur":475, "ph":"X", "name": "Tundra",  "args": { "detail":"BuildQueueInit" }}
-,{ "pid":12345, "tid":0, "ts":1721995005282402, "dur":497, "ph":"X", "name": "EnqueueRequestedNodes",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1721995005282899, "dur":1, "ph":"X", "name": "SortWorkingStack",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1721995006351823, "dur":103, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1721995006351926, "dur":150, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1721995006352076, "dur":4, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1721995006352080, "dur":8, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1721995006352088, "dur":2, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1721995006352090, "dur":7, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1721995006352097, "dur":2, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1721995006352099, "dur":6, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1721995006352105, "dur":2, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1721995006352107, "dur":6, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1721995006352113, "dur":2, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1721995006352115, "dur":6, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1721995006352121, "dur":2, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1721995006352123, "dur":5, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1721995006352128, "dur":2, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1721995006352130, "dur":5, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1721995006352135, "dur":2, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1721995006352137, "dur":6, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1721995006352143, "dur":2, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1721995006352145, "dur":5, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1721995006352150, "dur":2, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1721995006352152, "dur":6, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1721995006352158, "dur":2, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1721995006352160, "dur":5, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1721995006352165, "dur":0, "ph":"X", "name": "SharedResourceDestroy",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1721995006352177, "dur":2, "ph":"X", "name": "BuildQueueDestroyTail",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1721995006352200, "dur":910, "ph":"X", "name": "Tundra",  "args": { "detail":"Write AllBuiltNodes" }}
-,{ "pid":12345, "tid":1, "ts":1721995005282476, "dur":429, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":1, "ts":1721995005282910, "dur":3758, "ph":"X", "name": "CheckDagSignatures",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":1, "ts":1721995005286675, "dur":1, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"WriteText Library/Bee/artifacts/WinPlayerBuildProgram/Data/app.info" }}
-,{ "pid":12345, "tid":1, "ts":1721995005286682, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":1, "ts":1721995005287404, "dur":207, "ph":"X", "name": "WriteText",  "args": { "detail":"Library/Bee/artifacts/WinPlayerBuildProgram/Data/app.info" }}
-,{ "pid":12345, "tid":1, "ts":1721995005287613, "dur":16, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/WintexSupport/Test/Whoops-whoops_Data/app.info" }}
-,{ "pid":12345, "tid":1, "ts":1721995005287630, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":1, "ts":1721995005287643, "dur":1518, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/WintexSupport/Test/Whoops-whoops_Data/app.info" }}
-,{ "pid":12345, "tid":1, "ts":1721995005289163, "dur":56, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/WintexSupport/Test/MonoBleedingEdge/etc/mono/2.0/Browsers/Compat.browser" }}
-,{ "pid":12345, "tid":1, "ts":1721995005289222, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":1, "ts":1721995005289281, "dur":825, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/WintexSupport/Test/MonoBleedingEdge/etc/mono/2.0/Browsers/Compat.browser" }}
-,{ "pid":12345, "tid":1, "ts":1721995005290165, "dur":56, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/WintexSupport/Test/MonoBleedingEdge/etc/mono/2.0/DefaultWsdlHelpGenerator.aspx" }}
-,{ "pid":12345, "tid":1, "ts":1721995005290224, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":1, "ts":1721995005290231, "dur":1052, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/WintexSupport/Test/MonoBleedingEdge/etc/mono/2.0/DefaultWsdlHelpGenerator.aspx" }}
-,{ "pid":12345, "tid":1, "ts":1721995005291332, "dur":9231, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/WintexSupport/Test/MonoBleedingEdge/EmbedRuntime/mono-2.0-bdwgc.dll" }}
-,{ "pid":12345, "tid":1, "ts":1721995005300569, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":1, "ts":1721995005300577, "dur":6613, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/WintexSupport/Test/MonoBleedingEdge/EmbedRuntime/mono-2.0-bdwgc.dll" }}
-,{ "pid":12345, "tid":1, "ts":1721995005307263, "dur":58905, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/WintexSupport/Test/Whoops-whoops_Data/Managed/UnityEngine.UnityWebRequestWWWModule.dll" }}
-,{ "pid":12345, "tid":1, "ts":1721995005366172, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":1, "ts":1721995005366178, "dur":1236, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/WintexSupport/Test/Whoops-whoops_Data/Managed/UnityEngine.UnityWebRequestWWWModule.dll" }}
-,{ "pid":12345, "tid":1, "ts":1721995005367431, "dur":96180, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/WintexSupport/Test/Whoops-whoops_Data/Managed/UnityEngine.UnityAnalyticsModule.dll" }}
-,{ "pid":12345, "tid":1, "ts":1721995005463617, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":1, "ts":1721995005463626, "dur":1053, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/WintexSupport/Test/Whoops-whoops_Data/Managed/UnityEngine.UnityAnalyticsModule.dll" }}
-,{ "pid":12345, "tid":1, "ts":1721995005464698, "dur":61431, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/WintexSupport/Test/Whoops-whoops_Data/Managed/UnityEngine.SubsystemsModule.dll" }}
-,{ "pid":12345, "tid":1, "ts":1721995005526133, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":1, "ts":1721995005526142, "dur":1046, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/WintexSupport/Test/Whoops-whoops_Data/Managed/UnityEngine.SubsystemsModule.dll" }}
-,{ "pid":12345, "tid":1, "ts":1721995005527210, "dur":63109, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/WintexSupport/Test/Whoops-whoops_Data/Managed/UnityEngine.PhysicsModule.dll" }}
-,{ "pid":12345, "tid":1, "ts":1721995005590325, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":1, "ts":1721995005590334, "dur":1213, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/WintexSupport/Test/Whoops-whoops_Data/Managed/UnityEngine.PhysicsModule.dll" }}
-,{ "pid":12345, "tid":1, "ts":1721995005591567, "dur":42789, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/WintexSupport/Test/Whoops-whoops_Data/Managed/UnityEngine.ImageConversionModule.dll" }}
-,{ "pid":12345, "tid":1, "ts":1721995005634362, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":1, "ts":1721995005634371, "dur":6926, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/WintexSupport/Test/Whoops-whoops_Data/Managed/UnityEngine.ImageConversionModule.dll" }}
-,{ "pid":12345, "tid":1, "ts":1721995005641319, "dur":40495, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/WintexSupport/Test/Whoops-whoops_Data/Managed/UnityEngine.ClusterRendererModule.dll" }}
-,{ "pid":12345, "tid":1, "ts":1721995005681821, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":1, "ts":1721995005681831, "dur":3310, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/WintexSupport/Test/Whoops-whoops_Data/Managed/UnityEngine.ClusterRendererModule.dll" }}
-,{ "pid":12345, "tid":1, "ts":1721995005685159, "dur":84985, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/WintexSupport/Test/Whoops-whoops_Data/Managed/Unity.VisualScripting.State.dll" }}
-,{ "pid":12345, "tid":1, "ts":1721995005770150, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":1, "ts":1721995005770159, "dur":1070, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/WintexSupport/Test/Whoops-whoops_Data/Managed/Unity.VisualScripting.State.dll" }}
-,{ "pid":12345, "tid":1, "ts":1721995005771248, "dur":365677, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/WintexSupport/Test/Whoops-whoops_Data/Managed/System.Security.dll" }}
-,{ "pid":12345, "tid":1, "ts":1721995006136953, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":1, "ts":1721995006136964, "dur":1121, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/WintexSupport/Test/Whoops-whoops_Data/Managed/System.Security.dll" }}
-,{ "pid":12345, "tid":1, "ts":1721995006138104, "dur":213721, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":2, "ts":1721995005282509, "dur":411, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":2, "ts":1721995005282920, "dur":3754, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":2, "ts":1721995005286677, "dur":299, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/WintexSupport/Test/MonoBleedingEdge/etc/mono/4.5/machine.config" }}
-,{ "pid":12345, "tid":2, "ts":1721995005286978, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":2, "ts":1721995005295329, "dur":1728, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/WintexSupport/Test/MonoBleedingEdge/etc/mono/4.5/machine.config" }}
-,{ "pid":12345, "tid":2, "ts":1721995005297114, "dur":80374, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/WintexSupport/Test/Whoops-whoops_Data/Managed/UnityEngine.VideoModule.dll" }}
-,{ "pid":12345, "tid":2, "ts":1721995005377494, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":2, "ts":1721995005377503, "dur":1408, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/WintexSupport/Test/Whoops-whoops_Data/Managed/UnityEngine.VideoModule.dll" }}
-,{ "pid":12345, "tid":2, "ts":1721995005378929, "dur":72662, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/WintexSupport/Test/Whoops-whoops_Data/Managed/UnityEngine.UIModule.dll" }}
-,{ "pid":12345, "tid":2, "ts":1721995005451597, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":2, "ts":1721995005451606, "dur":1117, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/WintexSupport/Test/Whoops-whoops_Data/Managed/UnityEngine.UIModule.dll" }}
-,{ "pid":12345, "tid":2, "ts":1721995005452741, "dur":91394, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/WintexSupport/Test/Whoops-whoops_Data/Managed/UnityEngine.TerrainModule.dll" }}
-,{ "pid":12345, "tid":2, "ts":1721995005544140, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":2, "ts":1721995005544151, "dur":1442, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/WintexSupport/Test/Whoops-whoops_Data/Managed/UnityEngine.TerrainModule.dll" }}
-,{ "pid":12345, "tid":2, "ts":1721995005545614, "dur":89998, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/WintexSupport/Test/Whoops-whoops_Data/Managed/UnityEngine.ParticleSystemModule.dll" }}
-,{ "pid":12345, "tid":2, "ts":1721995005635617, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":2, "ts":1721995005635624, "dur":1119, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/WintexSupport/Test/Whoops-whoops_Data/Managed/UnityEngine.ParticleSystemModule.dll" }}
-,{ "pid":12345, "tid":2, "ts":1721995005636763, "dur":175536, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/WintexSupport/Test/Whoops-whoops_Data/Managed/UnityEngine.CoreModule.dll" }}
-,{ "pid":12345, "tid":2, "ts":1721995005812305, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":2, "ts":1721995005812314, "dur":1771, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/WintexSupport/Test/Whoops-whoops_Data/Managed/UnityEngine.CoreModule.dll" }}
-,{ "pid":12345, "tid":2, "ts":1721995005814104, "dur":231486, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/WintexSupport/Test/Whoops-whoops_Data/Managed/System.Runtime.Serialization.dll" }}
-,{ "pid":12345, "tid":2, "ts":1721995006045597, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":2, "ts":1721995006045607, "dur":1705, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/WintexSupport/Test/Whoops-whoops_Data/Managed/System.Runtime.Serialization.dll" }}
-,{ "pid":12345, "tid":2, "ts":1721995006047333, "dur":256846, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/WintexSupport/Test/Whoops-whoops_Data/Managed/Mono.Security.dll" }}
-,{ "pid":12345, "tid":2, "ts":1721995006304199, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":2, "ts":1721995006304205, "dur":816, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/WintexSupport/Test/Whoops-whoops_Data/Managed/Mono.Security.dll" }}
-,{ "pid":12345, "tid":2, "ts":1721995006305033, "dur":46793, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":3, "ts":1721995005282500, "dur":414, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":3, "ts":1721995005282914, "dur":3757, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":3, "ts":1721995005286676, "dur":256, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/WintexSupport/Test/MonoBleedingEdge/etc/mono/4.5/web.config" }}
-,{ "pid":12345, "tid":3, "ts":1721995005286934, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":3, "ts":1721995005294624, "dur":2415, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/WintexSupport/Test/MonoBleedingEdge/etc/mono/4.5/web.config" }}
-,{ "pid":12345, "tid":3, "ts":1721995005297114, "dur":71271, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/WintexSupport/Test/Whoops-whoops_Data/Managed/UnityEngine.VFXModule.dll" }}
-,{ "pid":12345, "tid":3, "ts":1721995005368390, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":3, "ts":1721995005368399, "dur":1198, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/WintexSupport/Test/Whoops-whoops_Data/Managed/UnityEngine.VFXModule.dll" }}
-,{ "pid":12345, "tid":3, "ts":1721995005369622, "dur":38012, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/WintexSupport/Test/Whoops-whoops_Data/Managed/UnityEngine.UnityAnalyticsCommonModule.dll" }}
-,{ "pid":12345, "tid":3, "ts":1721995005407640, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":3, "ts":1721995005407651, "dur":4259, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/WintexSupport/Test/Whoops-whoops_Data/Managed/UnityEngine.UnityAnalyticsCommonModule.dll" }}
-,{ "pid":12345, "tid":3, "ts":1721995005411929, "dur":66659, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/WintexSupport/Test/Whoops-whoops_Data/Managed/UnityEngine.TextRenderingModule.dll" }}
-,{ "pid":12345, "tid":3, "ts":1721995005478593, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":3, "ts":1721995005478602, "dur":986, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/WintexSupport/Test/Whoops-whoops_Data/Managed/UnityEngine.TextRenderingModule.dll" }}
-,{ "pid":12345, "tid":3, "ts":1721995005479605, "dur":52764, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/WintexSupport/Test/Whoops-whoops_Data/Managed/UnityEngine.SpriteShapeModule.dll" }}
-,{ "pid":12345, "tid":3, "ts":1721995005532376, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":3, "ts":1721995005532387, "dur":897, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/WintexSupport/Test/Whoops-whoops_Data/Managed/UnityEngine.SpriteShapeModule.dll" }}
-,{ "pid":12345, "tid":3, "ts":1721995005533301, "dur":43384, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/WintexSupport/Test/Whoops-whoops_Data/Managed/UnityEngine.PerformanceReportingModule.dll" }}
-,{ "pid":12345, "tid":3, "ts":1721995005576696, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":3, "ts":1721995005576707, "dur":4220, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/WintexSupport/Test/Whoops-whoops_Data/Managed/UnityEngine.PerformanceReportingModule.dll" }}
-,{ "pid":12345, "tid":3, "ts":1721995005580954, "dur":63272, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/WintexSupport/Test/Whoops-whoops_Data/Managed/UnityEngine.InputLegacyModule.dll" }}
-,{ "pid":12345, "tid":3, "ts":1721995005644231, "dur":3, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":3, "ts":1721995005644242, "dur":1062, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/WintexSupport/Test/Whoops-whoops_Data/Managed/UnityEngine.InputLegacyModule.dll" }}
-,{ "pid":12345, "tid":3, "ts":1721995005645322, "dur":62495, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/WintexSupport/Test/Whoops-whoops_Data/Managed/UnityEngine.ClothModule.dll" }}
-,{ "pid":12345, "tid":3, "ts":1721995005707824, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":3, "ts":1721995005707835, "dur":2667, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/WintexSupport/Test/Whoops-whoops_Data/Managed/UnityEngine.ClothModule.dll" }}
-,{ "pid":12345, "tid":3, "ts":1721995005710522, "dur":182616, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/WintexSupport/Test/Whoops-whoops_Data/Managed/Unity.VisualScripting.Flow.dll" }}
-,{ "pid":12345, "tid":3, "ts":1721995005893144, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":3, "ts":1721995005893154, "dur":1316, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/WintexSupport/Test/Whoops-whoops_Data/Managed/Unity.VisualScripting.Flow.dll" }}
-,{ "pid":12345, "tid":3, "ts":1721995005894490, "dur":52748, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/WintexSupport/Test/Whoops-whoops_Data/Managed/System.EnterpriseServices.dll" }}
-,{ "pid":12345, "tid":3, "ts":1721995005947244, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":3, "ts":1721995005947254, "dur":1173, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/WintexSupport/Test/Whoops-whoops_Data/Managed/System.EnterpriseServices.dll" }}
-,{ "pid":12345, "tid":3, "ts":1721995005948447, "dur":227265, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/WintexSupport/Test/Whoops-whoops_Data/Managed/System.Core.dll" }}
-,{ "pid":12345, "tid":3, "ts":1721995006175718, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":3, "ts":1721995006175728, "dur":1622, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/WintexSupport/Test/Whoops-whoops_Data/Managed/System.Core.dll" }}
-,{ "pid":12345, "tid":3, "ts":1721995006177369, "dur":174458, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":4, "ts":1721995005282543, "dur":385, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":4, "ts":1721995005282928, "dur":3745, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":4, "ts":1721995005286677, "dur":90, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/WintexSupport/Test/MonoBleedingEdge/etc/mono/4.5/settings.map" }}
-,{ "pid":12345, "tid":4, "ts":1721995005286771, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":4, "ts":1721995005311773, "dur":13537, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/WintexSupport/Test/MonoBleedingEdge/etc/mono/4.5/settings.map" }}
-,{ "pid":12345, "tid":4, "ts":1721995005325393, "dur":40661, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/WintexSupport/Test/Whoops-whoops_Data/Managed/UnityEngine.UnityWebRequestTextureModule.dll" }}
-,{ "pid":12345, "tid":4, "ts":1721995005366062, "dur":3, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":4, "ts":1721995005366073, "dur":1131, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/WintexSupport/Test/Whoops-whoops_Data/Managed/UnityEngine.UnityWebRequestTextureModule.dll" }}
-,{ "pid":12345, "tid":4, "ts":1721995005367225, "dur":37995, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/WintexSupport/Test/Whoops-whoops_Data/Managed/UnityEngine.UnityConnectModule.dll" }}
-,{ "pid":12345, "tid":4, "ts":1721995005405224, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":4, "ts":1721995005405232, "dur":2585, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/WintexSupport/Test/Whoops-whoops_Data/Managed/UnityEngine.UnityConnectModule.dll" }}
-,{ "pid":12345, "tid":4, "ts":1721995005407837, "dur":36471, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/WintexSupport/Test/Whoops-whoops_Data/Managed/UnityEngine.TLSModule.dll" }}
-,{ "pid":12345, "tid":4, "ts":1721995005444313, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":4, "ts":1721995005444322, "dur":1109, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/WintexSupport/Test/Whoops-whoops_Data/Managed/UnityEngine.TLSModule.dll" }}
-,{ "pid":12345, "tid":4, "ts":1721995005445449, "dur":35437, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/WintexSupport/Test/Whoops-whoops_Data/Managed/UnityEngine.TerrainPhysicsModule.dll" }}
-,{ "pid":12345, "tid":4, "ts":1721995005480890, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":4, "ts":1721995005480898, "dur":910, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/WintexSupport/Test/Whoops-whoops_Data/Managed/UnityEngine.TerrainPhysicsModule.dll" }}
-,{ "pid":12345, "tid":4, "ts":1721995005481825, "dur":71890, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/WintexSupport/Test/Whoops-whoops_Data/Managed/UnityEngine.SharedInternalsModule.dll" }}
-,{ "pid":12345, "tid":4, "ts":1721995005553721, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":4, "ts":1721995005553730, "dur":1173, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/WintexSupport/Test/Whoops-whoops_Data/Managed/UnityEngine.SharedInternalsModule.dll" }}
-,{ "pid":12345, "tid":4, "ts":1721995005554923, "dur":43060, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/WintexSupport/Test/Whoops-whoops_Data/Managed/UnityEngine.LocalizationModule.dll" }}
-,{ "pid":12345, "tid":4, "ts":1721995005597990, "dur":3, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":4, "ts":1721995005598002, "dur":1101, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/WintexSupport/Test/Whoops-whoops_Data/Managed/UnityEngine.LocalizationModule.dll" }}
-,{ "pid":12345, "tid":4, "ts":1721995005599121, "dur":35454, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/WintexSupport/Test/Whoops-whoops_Data/Managed/UnityEngine.HotReloadModule.dll" }}
-,{ "pid":12345, "tid":4, "ts":1721995005634579, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":4, "ts":1721995005634586, "dur":6807, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/WintexSupport/Test/Whoops-whoops_Data/Managed/UnityEngine.HotReloadModule.dll" }}
-,{ "pid":12345, "tid":4, "ts":1721995005641412, "dur":41929, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/WintexSupport/Test/Whoops-whoops_Data/Managed/UnityEngine.ClusterInputModule.dll" }}
-,{ "pid":12345, "tid":4, "ts":1721995005683347, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":4, "ts":1721995005683381, "dur":1138, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/WintexSupport/Test/Whoops-whoops_Data/Managed/UnityEngine.ClusterInputModule.dll" }}
-,{ "pid":12345, "tid":4, "ts":1721995005684538, "dur":65724, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/WintexSupport/Test/Whoops-whoops_Data/Managed/UnityEngine.AccessibilityModule.dll" }}
-,{ "pid":12345, "tid":4, "ts":1721995005750267, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":4, "ts":1721995005750275, "dur":4310, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/WintexSupport/Test/Whoops-whoops_Data/Managed/UnityEngine.AccessibilityModule.dll" }}
-,{ "pid":12345, "tid":4, "ts":1721995005754607, "dur":172189, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/WintexSupport/Test/Whoops-whoops_Data/Managed/System.ServiceModel.Internals.dll" }}
-,{ "pid":12345, "tid":4, "ts":1721995005926803, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":4, "ts":1721995005926812, "dur":1247, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/WintexSupport/Test/Whoops-whoops_Data/Managed/System.ServiceModel.Internals.dll" }}
-,{ "pid":12345, "tid":4, "ts":1721995005928078, "dur":99197, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/WintexSupport/Test/Whoops-whoops_Data/Managed/System.Data.DataSetExtensions.dll" }}
-,{ "pid":12345, "tid":4, "ts":1721995006027281, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":4, "ts":1721995006027291, "dur":1286, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/WintexSupport/Test/Whoops-whoops_Data/Managed/System.Data.DataSetExtensions.dll" }}
-,{ "pid":12345, "tid":4, "ts":1721995006028600, "dur":82573, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/WintexSupport/Test/Whoops-whoops_Data/Managed/netstandard.dll" }}
-,{ "pid":12345, "tid":4, "ts":1721995006111179, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":4, "ts":1721995006111188, "dur":1185, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/WintexSupport/Test/Whoops-whoops_Data/Managed/netstandard.dll" }}
-,{ "pid":12345, "tid":4, "ts":1721995006112396, "dur":18, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/WintexSupport/Test/Whoops-whoops_Data/Resources/unity_builtin_extra" }}
-,{ "pid":12345, "tid":4, "ts":1721995006112417, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":4, "ts":1721995006112448, "dur":1147, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/WintexSupport/Test/Whoops-whoops_Data/Resources/unity_builtin_extra" }}
-,{ "pid":12345, "tid":4, "ts":1721995006113615, "dur":16, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/WintexSupport/Test/Whoops-whoops_Data/sharedassets1.assets" }}
-,{ "pid":12345, "tid":4, "ts":1721995006113634, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":4, "ts":1721995006113639, "dur":909, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/WintexSupport/Test/Whoops-whoops_Data/sharedassets1.assets" }}
-,{ "pid":12345, "tid":4, "ts":1721995006114576, "dur":16, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/WintexSupport/Test/Whoops-whoops_Data/sharedassets0.assets.resS" }}
-,{ "pid":12345, "tid":4, "ts":1721995006114595, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":4, "ts":1721995006114600, "dur":1820, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/WintexSupport/Test/Whoops-whoops_Data/sharedassets0.assets.resS" }}
-,{ "pid":12345, "tid":4, "ts":1721995006116441, "dur":19, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/WintexSupport/Test/Whoops-whoops_Data/sharedassets0.assets" }}
-,{ "pid":12345, "tid":4, "ts":1721995006116464, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":4, "ts":1721995006116471, "dur":1227, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/WintexSupport/Test/Whoops-whoops_Data/sharedassets0.assets" }}
-,{ "pid":12345, "tid":4, "ts":1721995006117715, "dur":191, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/WintexSupport/Test/Whoops-whoops_Data/ScriptingAssemblies.json" }}
-,{ "pid":12345, "tid":4, "ts":1721995006117910, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":4, "ts":1721995006117916, "dur":910, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/WintexSupport/Test/Whoops-whoops_Data/ScriptingAssemblies.json" }}
-,{ "pid":12345, "tid":4, "ts":1721995006118842, "dur":15, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/WintexSupport/Test/Whoops-whoops_Data/resources.assets.resS" }}
-,{ "pid":12345, "tid":4, "ts":1721995006118860, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":4, "ts":1721995006118865, "dur":1733, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/WintexSupport/Test/Whoops-whoops_Data/resources.assets.resS" }}
-,{ "pid":12345, "tid":4, "ts":1721995006120619, "dur":17, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/WintexSupport/Test/Whoops-whoops_Data/resources.assets" }}
-,{ "pid":12345, "tid":4, "ts":1721995006120639, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":4, "ts":1721995006120647, "dur":1052, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/WintexSupport/Test/Whoops-whoops_Data/resources.assets" }}
-,{ "pid":12345, "tid":4, "ts":1721995006121718, "dur":18, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/WintexSupport/Test/Whoops-whoops_Data/level1.resS" }}
-,{ "pid":12345, "tid":4, "ts":1721995006121762, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":4, "ts":1721995006121768, "dur":1024, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/WintexSupport/Test/Whoops-whoops_Data/level1.resS" }}
-,{ "pid":12345, "tid":4, "ts":1721995006122812, "dur":15, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/WintexSupport/Test/Whoops-whoops_Data/level1" }}
-,{ "pid":12345, "tid":4, "ts":1721995006122830, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":4, "ts":1721995006122836, "dur":1700, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/WintexSupport/Test/Whoops-whoops_Data/level1" }}
-,{ "pid":12345, "tid":4, "ts":1721995006124557, "dur":18, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/WintexSupport/Test/Whoops-whoops_Data/level0.resS" }}
-,{ "pid":12345, "tid":4, "ts":1721995006124578, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":4, "ts":1721995006124585, "dur":1064, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/WintexSupport/Test/Whoops-whoops_Data/level0.resS" }}
-,{ "pid":12345, "tid":4, "ts":1721995006125671, "dur":17, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/WintexSupport/Test/Whoops-whoops_Data/level0" }}
-,{ "pid":12345, "tid":4, "ts":1721995006125691, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":4, "ts":1721995006125697, "dur":921, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/WintexSupport/Test/Whoops-whoops_Data/level0" }}
-,{ "pid":12345, "tid":4, "ts":1721995006126635, "dur":17, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/WintexSupport/Test/Whoops-whoops_Data/globalgamemanagers.assets" }}
-,{ "pid":12345, "tid":4, "ts":1721995006126655, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":4, "ts":1721995006126660, "dur":1022, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/WintexSupport/Test/Whoops-whoops_Data/globalgamemanagers.assets" }}
-,{ "pid":12345, "tid":4, "ts":1721995006127700, "dur":17, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/WintexSupport/Test/Whoops-whoops_Data/globalgamemanagers" }}
-,{ "pid":12345, "tid":4, "ts":1721995006127719, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":4, "ts":1721995006127725, "dur":929, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/WintexSupport/Test/Whoops-whoops_Data/globalgamemanagers" }}
-,{ "pid":12345, "tid":4, "ts":1721995006128673, "dur":194, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/WintexSupport/Test/Whoops-whoops_Data/boot.config" }}
-,{ "pid":12345, "tid":4, "ts":1721995006128870, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":4, "ts":1721995006128876, "dur":924, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/WintexSupport/Test/Whoops-whoops_Data/boot.config" }}
-,{ "pid":12345, "tid":4, "ts":1721995006129819, "dur":222003, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":5, "ts":1721995005282578, "dur":356, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":5, "ts":1721995005282934, "dur":3736, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":5, "ts":1721995005286677, "dur":121, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/WintexSupport/Test/MonoBleedingEdge/etc/mono/4.5/Browsers/Compat.browser" }}
-,{ "pid":12345, "tid":5, "ts":1721995005286803, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":5, "ts":1721995005294116, "dur":2502, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/WintexSupport/Test/MonoBleedingEdge/etc/mono/4.5/Browsers/Compat.browser" }}
-,{ "pid":12345, "tid":5, "ts":1721995005296696, "dur":63806, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/WintexSupport/Test/Whoops-whoops_Data/Managed/UnityEngine.VRModule.dll" }}
-,{ "pid":12345, "tid":5, "ts":1721995005360509, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":5, "ts":1721995005360519, "dur":2259, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/WintexSupport/Test/Whoops-whoops_Data/Managed/UnityEngine.VRModule.dll" }}
-,{ "pid":12345, "tid":5, "ts":1721995005362801, "dur":42360, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/WintexSupport/Test/Whoops-whoops_Data/Managed/UnityEngine.UnityCurlModule.dll" }}
-,{ "pid":12345, "tid":5, "ts":1721995005405166, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":5, "ts":1721995005405173, "dur":1120, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/WintexSupport/Test/Whoops-whoops_Data/Managed/UnityEngine.UnityCurlModule.dll" }}
-,{ "pid":12345, "tid":5, "ts":1721995005406312, "dur":223693, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/WintexSupport/Test/Whoops-whoops_Data/Managed/UnityEngine.UI.dll" }}
-,{ "pid":12345, "tid":5, "ts":1721995005630011, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":5, "ts":1721995005630020, "dur":2321, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/WintexSupport/Test/Whoops-whoops_Data/Managed/UnityEngine.UI.dll" }}
-,{ "pid":12345, "tid":5, "ts":1721995005632360, "dur":38782, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/WintexSupport/Test/Whoops-whoops_Data/Managed/UnityEngine.CrashReportingModule.dll" }}
-,{ "pid":12345, "tid":5, "ts":1721995005671147, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":5, "ts":1721995005671157, "dur":1047, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/WintexSupport/Test/Whoops-whoops_Data/Managed/UnityEngine.CrashReportingModule.dll" }}
-,{ "pid":12345, "tid":5, "ts":1721995005672224, "dur":69405, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/WintexSupport/Test/Whoops-whoops_Data/Managed/UnityEngine.AnimationModule.dll" }}
-,{ "pid":12345, "tid":5, "ts":1721995005741635, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":5, "ts":1721995005741645, "dur":1158, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/WintexSupport/Test/Whoops-whoops_Data/Managed/UnityEngine.AnimationModule.dll" }}
-,{ "pid":12345, "tid":5, "ts":1721995005742823, "dur":152277, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/WintexSupport/Test/Whoops-whoops_Data/Managed/System.Xml.Linq.dll" }}
-,{ "pid":12345, "tid":5, "ts":1721995005895104, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":5, "ts":1721995005895113, "dur":1138, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/WintexSupport/Test/Whoops-whoops_Data/Managed/System.Xml.Linq.dll" }}
-,{ "pid":12345, "tid":5, "ts":1721995005896270, "dur":276272, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/WintexSupport/Test/Whoops-whoops_Data/Managed/System.Drawing.dll" }}
-,{ "pid":12345, "tid":5, "ts":1721995006172548, "dur":3, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":5, "ts":1721995006172558, "dur":1163, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/WintexSupport/Test/Whoops-whoops_Data/Managed/System.Drawing.dll" }}
-,{ "pid":12345, "tid":5, "ts":1721995006173741, "dur":178088, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":6, "ts":1721995005282604, "dur":335, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":6, "ts":1721995005282940, "dur":3729, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":6, "ts":1721995005286676, "dur":306, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/WintexSupport/Test/MonoBleedingEdge/etc/mono/mconfig/config.xml" }}
-,{ "pid":12345, "tid":6, "ts":1721995005286984, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":6, "ts":1721995005303209, "dur":1704, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/WintexSupport/Test/MonoBleedingEdge/etc/mono/mconfig/config.xml" }}
-,{ "pid":12345, "tid":6, "ts":1721995005305000, "dur":46709, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/WintexSupport/Test/Whoops-whoops_Data/Managed/UnityEngine.VehiclesModule.dll" }}
-,{ "pid":12345, "tid":6, "ts":1721995005351715, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":6, "ts":1721995005351725, "dur":1133, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/WintexSupport/Test/Whoops-whoops_Data/Managed/UnityEngine.VehiclesModule.dll" }}
-,{ "pid":12345, "tid":6, "ts":1721995005352878, "dur":49716, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/WintexSupport/Test/Whoops-whoops_Data/Managed/UnityEngine.UnityWebRequestAssetBundleModule.dll" }}
-,{ "pid":12345, "tid":6, "ts":1721995005402600, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":6, "ts":1721995005402613, "dur":1402, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/WintexSupport/Test/Whoops-whoops_Data/Managed/UnityEngine.UnityWebRequestAssetBundleModule.dll" }}
-,{ "pid":12345, "tid":6, "ts":1721995005404043, "dur":72846, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/WintexSupport/Test/Whoops-whoops_Data/Managed/UnityEngine.UIElementsNativeModule.dll" }}
-,{ "pid":12345, "tid":6, "ts":1721995005476893, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":6, "ts":1721995005476900, "dur":1799, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/WintexSupport/Test/Whoops-whoops_Data/Managed/UnityEngine.UIElementsNativeModule.dll" }}
-,{ "pid":12345, "tid":6, "ts":1721995005478718, "dur":33353, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/WintexSupport/Test/Whoops-whoops_Data/Managed/UnityEngine.StreamingModule.dll" }}
-,{ "pid":12345, "tid":6, "ts":1721995005512078, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":6, "ts":1721995005512087, "dur":1082, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/WintexSupport/Test/Whoops-whoops_Data/Managed/UnityEngine.StreamingModule.dll" }}
-,{ "pid":12345, "tid":6, "ts":1721995005513189, "dur":37578, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/WintexSupport/Test/Whoops-whoops_Data/Managed/UnityEngine.ScreenCaptureModule.dll" }}
-,{ "pid":12345, "tid":6, "ts":1721995005550773, "dur":3, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":6, "ts":1721995005550783, "dur":1100, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/WintexSupport/Test/Whoops-whoops_Data/Managed/UnityEngine.ScreenCaptureModule.dll" }}
-,{ "pid":12345, "tid":6, "ts":1721995005551905, "dur":64733, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/WintexSupport/Test/Whoops-whoops_Data/Managed/UnityEngine.NVIDIAModule.dll" }}
-,{ "pid":12345, "tid":6, "ts":1721995005616644, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":6, "ts":1721995005616654, "dur":1772, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/WintexSupport/Test/Whoops-whoops_Data/Managed/UnityEngine.NVIDIAModule.dll" }}
-,{ "pid":12345, "tid":6, "ts":1721995005618447, "dur":50663, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/WintexSupport/Test/Whoops-whoops_Data/Managed/UnityEngine.DSPGraphModule.dll" }}
-,{ "pid":12345, "tid":6, "ts":1721995005669117, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":6, "ts":1721995005669128, "dur":2452, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/WintexSupport/Test/Whoops-whoops_Data/Managed/UnityEngine.DSPGraphModule.dll" }}
-,{ "pid":12345, "tid":6, "ts":1721995005671609, "dur":38525, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/WintexSupport/Test/Whoops-whoops_Data/Managed/UnityEngine.ARModule.dll" }}
-,{ "pid":12345, "tid":6, "ts":1721995005710139, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":6, "ts":1721995005710149, "dur":1021, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/WintexSupport/Test/Whoops-whoops_Data/Managed/UnityEngine.ARModule.dll" }}
-,{ "pid":12345, "tid":6, "ts":1721995005711189, "dur":140618, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/WintexSupport/Test/Whoops-whoops_Data/Managed/Unity.VisualScripting.Core.dll" }}
-,{ "pid":12345, "tid":6, "ts":1721995005851815, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":6, "ts":1721995005851826, "dur":1383, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/WintexSupport/Test/Whoops-whoops_Data/Managed/Unity.VisualScripting.Core.dll" }}
-,{ "pid":12345, "tid":6, "ts":1721995005853228, "dur":171502, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/WintexSupport/Test/Whoops-whoops_Data/Managed/System.Net.Http.dll" }}
-,{ "pid":12345, "tid":6, "ts":1721995006024737, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":6, "ts":1721995006024746, "dur":1431, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/WintexSupport/Test/Whoops-whoops_Data/Managed/System.Net.Http.dll" }}
-,{ "pid":12345, "tid":6, "ts":1721995006026198, "dur":172897, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/WintexSupport/Test/Whoops-whoops_Data/Managed/System.ComponentModel.Composition.dll" }}
-,{ "pid":12345, "tid":6, "ts":1721995006199099, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":6, "ts":1721995006199106, "dur":846, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/WintexSupport/Test/Whoops-whoops_Data/Managed/System.ComponentModel.Composition.dll" }}
-,{ "pid":12345, "tid":6, "ts":1721995006199964, "dur":151855, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":7, "ts":1721995005282632, "dur":313, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":7, "ts":1721995005282945, "dur":3730, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":7, "ts":1721995005286675, "dur":119, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/WintexSupport/Test/MonoBleedingEdge/etc/mono/4.5/DefaultWsdlHelpGenerator.aspx" }}
-,{ "pid":12345, "tid":7, "ts":1721995005286799, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":7, "ts":1721995005293577, "dur":1006, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/WintexSupport/Test/MonoBleedingEdge/etc/mono/4.5/DefaultWsdlHelpGenerator.aspx" }}
-,{ "pid":12345, "tid":7, "ts":1721995005294647, "dur":64449, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/WintexSupport/Test/Whoops-whoops.exe" }}
-,{ "pid":12345, "tid":7, "ts":1721995005359102, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":7, "ts":1721995005359111, "dur":1786, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/WintexSupport/Test/Whoops-whoops.exe" }}
-,{ "pid":12345, "tid":7, "ts":1721995005360919, "dur":43517, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/WintexSupport/Test/Whoops-whoops_Data/Managed/UnityEngine.UnityTestProtocolModule.dll" }}
-,{ "pid":12345, "tid":7, "ts":1721995005404441, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":7, "ts":1721995005404450, "dur":1363, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/WintexSupport/Test/Whoops-whoops_Data/Managed/UnityEngine.UnityTestProtocolModule.dll" }}
-,{ "pid":12345, "tid":7, "ts":1721995005405832, "dur":199502, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/WintexSupport/Test/Whoops-whoops_Data/Managed/UnityEngine.UIElementsModule.dll" }}
-,{ "pid":12345, "tid":7, "ts":1721995005605340, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":7, "ts":1721995005605350, "dur":2222, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/WintexSupport/Test/Whoops-whoops_Data/Managed/UnityEngine.UIElementsModule.dll" }}
-,{ "pid":12345, "tid":7, "ts":1721995005607591, "dur":46239, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/WintexSupport/Test/Whoops-whoops_Data/Managed/UnityEngine.GridModule.dll" }}
-,{ "pid":12345, "tid":7, "ts":1721995005653836, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":7, "ts":1721995005653846, "dur":1959, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/WintexSupport/Test/Whoops-whoops_Data/Managed/UnityEngine.GridModule.dll" }}
-,{ "pid":12345, "tid":7, "ts":1721995005655827, "dur":82186, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/WintexSupport/Test/Whoops-whoops_Data/Managed/UnityEngine.AssetBundleModule.dll" }}
-,{ "pid":12345, "tid":7, "ts":1721995005738018, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":7, "ts":1721995005738026, "dur":1029, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/WintexSupport/Test/Whoops-whoops_Data/Managed/UnityEngine.AssetBundleModule.dll" }}
-,{ "pid":12345, "tid":7, "ts":1721995005739073, "dur":447563, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/WintexSupport/Test/Whoops-whoops_Data/Managed/Unity.TextMeshPro.dll" }}
-,{ "pid":12345, "tid":7, "ts":1721995006186641, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":7, "ts":1721995006186648, "dur":941, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/WintexSupport/Test/Whoops-whoops_Data/Managed/Unity.TextMeshPro.dll" }}
-,{ "pid":12345, "tid":7, "ts":1721995006187601, "dur":164230, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":8, "ts":1721995005282660, "dur":291, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":8, "ts":1721995005282951, "dur":3725, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":8, "ts":1721995005286679, "dur":103, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/WintexSupport/Test/MonoBleedingEdge/etc/mono/4.0/Browsers/Compat.browser" }}
-,{ "pid":12345, "tid":8, "ts":1721995005286787, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":8, "ts":1721995005287486, "dur":1672, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/WintexSupport/Test/MonoBleedingEdge/etc/mono/4.0/Browsers/Compat.browser" }}
-,{ "pid":12345, "tid":8, "ts":1721995005289218, "dur":54, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/WintexSupport/Test/MonoBleedingEdge/etc/mono/2.0/settings.map" }}
-,{ "pid":12345, "tid":8, "ts":1721995005289276, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":8, "ts":1721995005289283, "dur":754, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/WintexSupport/Test/MonoBleedingEdge/etc/mono/2.0/settings.map" }}
-,{ "pid":12345, "tid":8, "ts":1721995005290076, "dur":183, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/WintexSupport/Test/MonoBleedingEdge/etc/mono/2.0/machine.config" }}
-,{ "pid":12345, "tid":8, "ts":1721995005290262, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":8, "ts":1721995005290268, "dur":710, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/WintexSupport/Test/MonoBleedingEdge/etc/mono/2.0/machine.config" }}
-,{ "pid":12345, "tid":8, "ts":1721995005291023, "dur":41, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/WintexSupport/Test/MonoBleedingEdge/etc/mono/browscap.ini" }}
-,{ "pid":12345, "tid":8, "ts":1721995005291066, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":8, "ts":1721995005291070, "dur":985, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/WintexSupport/Test/MonoBleedingEdge/etc/mono/browscap.ini" }}
-,{ "pid":12345, "tid":8, "ts":1721995005292099, "dur":45997, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/WintexSupport/Test/UnityPlayer.dll" }}
-,{ "pid":12345, "tid":8, "ts":1721995005338100, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":8, "ts":1721995005338107, "dur":32031, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/WintexSupport/Test/UnityPlayer.dll" }}
-,{ "pid":12345, "tid":8, "ts":1721995005370226, "dur":109705, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/WintexSupport/Test/Whoops-whoops_Data/Managed/UnityEngine.UNETModule.dll" }}
-,{ "pid":12345, "tid":8, "ts":1721995005479948, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":8, "ts":1721995005479980, "dur":1152, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/WintexSupport/Test/Whoops-whoops_Data/Managed/UnityEngine.UNETModule.dll" }}
-,{ "pid":12345, "tid":8, "ts":1721995005481150, "dur":41313, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/WintexSupport/Test/Whoops-whoops_Data/Managed/UnityEngine.SpriteMaskModule.dll" }}
-,{ "pid":12345, "tid":8, "ts":1721995005522471, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":8, "ts":1721995005522481, "dur":3131, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/WintexSupport/Test/Whoops-whoops_Data/Managed/UnityEngine.SpriteMaskModule.dll" }}
-,{ "pid":12345, "tid":8, "ts":1721995005525633, "dur":55627, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/WintexSupport/Test/Whoops-whoops_Data/Managed/UnityEngine.ProfilerModule.dll" }}
-,{ "pid":12345, "tid":8, "ts":1721995005581264, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":8, "ts":1721995005581272, "dur":937, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/WintexSupport/Test/Whoops-whoops_Data/Managed/UnityEngine.ProfilerModule.dll" }}
-,{ "pid":12345, "tid":8, "ts":1721995005582226, "dur":154900, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/WintexSupport/Test/Whoops-whoops_Data/Managed/UnityEngine.IMGUIModule.dll" }}
-,{ "pid":12345, "tid":8, "ts":1721995005737132, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":8, "ts":1721995005737142, "dur":1181, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/WintexSupport/Test/Whoops-whoops_Data/Managed/UnityEngine.IMGUIModule.dll" }}
-,{ "pid":12345, "tid":8, "ts":1721995005738344, "dur":134364, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/WintexSupport/Test/Whoops-whoops_Data/Managed/Unity.Timeline.dll" }}
-,{ "pid":12345, "tid":8, "ts":1721995005872713, "dur":3, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":8, "ts":1721995005872724, "dur":1132, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/WintexSupport/Test/Whoops-whoops_Data/Managed/Unity.Timeline.dll" }}
-,{ "pid":12345, "tid":8, "ts":1721995005873891, "dur":163588, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/WintexSupport/Test/Whoops-whoops_Data/Managed/System.IO.Compression.dll" }}
-,{ "pid":12345, "tid":8, "ts":1721995006037485, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":8, "ts":1721995006037494, "dur":1313, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/WintexSupport/Test/Whoops-whoops_Data/Managed/System.IO.Compression.dll" }}
-,{ "pid":12345, "tid":8, "ts":1721995006038833, "dur":310446, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/WintexSupport/Test/Whoops-whoops_Data/Managed/mscorlib.dll" }}
-,{ "pid":12345, "tid":8, "ts":1721995006349283, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":8, "ts":1721995006349289, "dur":2489, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/WintexSupport/Test/Whoops-whoops_Data/Managed/mscorlib.dll" }}
-,{ "pid":12345, "tid":8, "ts":1721995006351792, "dur":2, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"Player" }}
-,{ "pid":12345, "tid":8, "ts":1721995006351795, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":9, "ts":1721995005282688, "dur":268, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":9, "ts":1721995005282956, "dur":3721, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":9, "ts":1721995005286678, "dur":305, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/WintexSupport/Test/MonoBleedingEdge/etc/mono/4.0/web.config" }}
-,{ "pid":12345, "tid":9, "ts":1721995005286986, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":9, "ts":1721995005287334, "dur":1819, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/WintexSupport/Test/MonoBleedingEdge/etc/mono/4.0/web.config" }}
-,{ "pid":12345, "tid":9, "ts":1721995005289216, "dur":217, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/WintexSupport/Test/MonoBleedingEdge/etc/mono/2.0/web.config" }}
-,{ "pid":12345, "tid":9, "ts":1721995005289436, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":9, "ts":1721995005289440, "dur":781, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/WintexSupport/Test/MonoBleedingEdge/etc/mono/2.0/web.config" }}
-,{ "pid":12345, "tid":9, "ts":1721995005290271, "dur":41, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/WintexSupport/Test/MonoBleedingEdge/etc/mono/config" }}
-,{ "pid":12345, "tid":9, "ts":1721995005290314, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":9, "ts":1721995005290317, "dur":886, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/WintexSupport/Test/MonoBleedingEdge/etc/mono/config" }}
-,{ "pid":12345, "tid":9, "ts":1721995005291262, "dur":899, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/WintexSupport/Test/MonoBleedingEdge/EmbedRuntime/MonoPosixHelper.dll" }}
-,{ "pid":12345, "tid":9, "ts":1721995005292165, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":9, "ts":1721995005292191, "dur":1075, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/WintexSupport/Test/MonoBleedingEdge/EmbedRuntime/MonoPosixHelper.dll" }}
-,{ "pid":12345, "tid":9, "ts":1721995005293311, "dur":1383, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/WintexSupport/Test/UnityCrashHandler64.exe" }}
-,{ "pid":12345, "tid":9, "ts":1721995005294697, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":9, "ts":1721995005294702, "dur":2055, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/WintexSupport/Test/UnityCrashHandler64.exe" }}
-,{ "pid":12345, "tid":9, "ts":1721995005296821, "dur":72202, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/WintexSupport/Test/Whoops-whoops_Data/Managed/UnityEngine.VirtualTexturingModule.dll" }}
-,{ "pid":12345, "tid":9, "ts":1721995005369027, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":9, "ts":1721995005369035, "dur":3429, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/WintexSupport/Test/Whoops-whoops_Data/Managed/UnityEngine.VirtualTexturingModule.dll" }}
-,{ "pid":12345, "tid":9, "ts":1721995005372484, "dur":47025, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/WintexSupport/Test/Whoops-whoops_Data/Managed/UnityEngine.UmbraModule.dll" }}
-,{ "pid":12345, "tid":9, "ts":1721995005419513, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":9, "ts":1721995005419545, "dur":7888, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/WintexSupport/Test/Whoops-whoops_Data/Managed/UnityEngine.UmbraModule.dll" }}
-,{ "pid":12345, "tid":9, "ts":1721995005427454, "dur":133838, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/WintexSupport/Test/Whoops-whoops_Data/Managed/UnityEngine.TextCoreFontEngineModule.dll" }}
-,{ "pid":12345, "tid":9, "ts":1721995005561300, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":9, "ts":1721995005561310, "dur":6426, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/WintexSupport/Test/Whoops-whoops_Data/Managed/UnityEngine.TextCoreFontEngineModule.dll" }}
-,{ "pid":12345, "tid":9, "ts":1721995005567757, "dur":39215, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/WintexSupport/Test/Whoops-whoops_Data/Managed/UnityEngine.InputModule.dll" }}
-,{ "pid":12345, "tid":9, "ts":1721995005606978, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":9, "ts":1721995005606986, "dur":1110, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/WintexSupport/Test/Whoops-whoops_Data/Managed/UnityEngine.InputModule.dll" }}
-,{ "pid":12345, "tid":9, "ts":1721995005608114, "dur":37910, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/WintexSupport/Test/Whoops-whoops_Data/Managed/UnityEngine.GIModule.dll" }}
-,{ "pid":12345, "tid":9, "ts":1721995005646028, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":9, "ts":1721995005646037, "dur":993, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/WintexSupport/Test/Whoops-whoops_Data/Managed/UnityEngine.GIModule.dll" }}
-,{ "pid":12345, "tid":9, "ts":1721995005647078, "dur":95716, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/WintexSupport/Test/Whoops-whoops_Data/Managed/UnityEngine.AudioModule.dll" }}
-,{ "pid":12345, "tid":9, "ts":1721995005742798, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":9, "ts":1721995005742807, "dur":1518, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/WintexSupport/Test/Whoops-whoops_Data/Managed/UnityEngine.AudioModule.dll" }}
-,{ "pid":12345, "tid":9, "ts":1721995005744343, "dur":369178, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/WintexSupport/Test/Whoops-whoops_Data/Managed/System.Xml.dll" }}
-,{ "pid":12345, "tid":9, "ts":1721995006113525, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":9, "ts":1721995006113533, "dur":4301, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/WintexSupport/Test/Whoops-whoops_Data/Managed/System.Xml.dll" }}
-,{ "pid":12345, "tid":9, "ts":1721995006117853, "dur":13877, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/WintexSupport/Test/Whoops-whoops_Data/RuntimeInitializeOnLoads.json" }}
-,{ "pid":12345, "tid":9, "ts":1721995006131737, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":9, "ts":1721995006131747, "dur":1118, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/WintexSupport/Test/Whoops-whoops_Data/RuntimeInitializeOnLoads.json" }}
-,{ "pid":12345, "tid":9, "ts":1721995006132885, "dur":218940, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":10, "ts":1721995005282724, "dur":237, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":10, "ts":1721995005282961, "dur":3720, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":10, "ts":1721995005286681, "dur":286, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/WintexSupport/Test/MonoBleedingEdge/etc/mono/4.0/machine.config" }}
-,{ "pid":12345, "tid":10, "ts":1721995005286970, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":10, "ts":1721995005294958, "dur":1541, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/WintexSupport/Test/MonoBleedingEdge/etc/mono/4.0/machine.config" }}
-,{ "pid":12345, "tid":10, "ts":1721995005296572, "dur":40018, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/WintexSupport/Test/Whoops-whoops_Data/Managed/UnityEngine.WindModule.dll" }}
-,{ "pid":12345, "tid":10, "ts":1721995005336596, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":10, "ts":1721995005336641, "dur":1363, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/WintexSupport/Test/Whoops-whoops_Data/Managed/UnityEngine.WindModule.dll" }}
-,{ "pid":12345, "tid":10, "ts":1721995005338024, "dur":70364, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/WintexSupport/Test/Whoops-whoops_Data/Managed/UnityEngine.UnityWebRequestAudioModule.dll" }}
-,{ "pid":12345, "tid":10, "ts":1721995005408392, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":10, "ts":1721995005408401, "dur":3270, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/WintexSupport/Test/Whoops-whoops_Data/Managed/UnityEngine.UnityWebRequestAudioModule.dll" }}
-,{ "pid":12345, "tid":10, "ts":1721995005411696, "dur":65075, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/WintexSupport/Test/Whoops-whoops_Data/Managed/UnityEngine.TilemapModule.dll" }}
-,{ "pid":12345, "tid":10, "ts":1721995005476777, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":10, "ts":1721995005476787, "dur":1300, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/WintexSupport/Test/Whoops-whoops_Data/Managed/UnityEngine.TilemapModule.dll" }}
-,{ "pid":12345, "tid":10, "ts":1721995005478106, "dur":53516, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/WintexSupport/Test/Whoops-whoops_Data/Managed/UnityEngine.SubstanceModule.dll" }}
-,{ "pid":12345, "tid":10, "ts":1721995005531630, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":10, "ts":1721995005531642, "dur":1118, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/WintexSupport/Test/Whoops-whoops_Data/Managed/UnityEngine.SubstanceModule.dll" }}
-,{ "pid":12345, "tid":10, "ts":1721995005532780, "dur":90051, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/WintexSupport/Test/Whoops-whoops_Data/Managed/UnityEngine.Physics2DModule.dll" }}
-,{ "pid":12345, "tid":10, "ts":1721995005622837, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":10, "ts":1721995005622846, "dur":1251, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/WintexSupport/Test/Whoops-whoops_Data/Managed/UnityEngine.Physics2DModule.dll" }}
-,{ "pid":12345, "tid":10, "ts":1721995005624115, "dur":48684, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/WintexSupport/Test/Whoops-whoops_Data/Managed/UnityEngine.dll" }}
-,{ "pid":12345, "tid":10, "ts":1721995005672803, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":10, "ts":1721995005672811, "dur":1034, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/WintexSupport/Test/Whoops-whoops_Data/Managed/UnityEngine.dll" }}
-,{ "pid":12345, "tid":10, "ts":1721995005673867, "dur":231349, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/WintexSupport/Test/Whoops-whoops_Data/Managed/UnityEngine.AndroidJNIModule.dll" }}
-,{ "pid":12345, "tid":10, "ts":1721995005905222, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":10, "ts":1721995005905231, "dur":1008, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/WintexSupport/Test/Whoops-whoops_Data/Managed/UnityEngine.AndroidJNIModule.dll" }}
-,{ "pid":12345, "tid":10, "ts":1721995005906259, "dur":282204, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/WintexSupport/Test/Whoops-whoops_Data/Managed/System.dll" }}
-,{ "pid":12345, "tid":10, "ts":1721995006188467, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":10, "ts":1721995006188475, "dur":1828, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/WintexSupport/Test/Whoops-whoops_Data/Managed/System.dll" }}
-,{ "pid":12345, "tid":10, "ts":1721995006190318, "dur":161519, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":11, "ts":1721995005282747, "dur":220, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":11, "ts":1721995005282967, "dur":3712, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":11, "ts":1721995005286682, "dur":117, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/WintexSupport/Test/MonoBleedingEdge/etc/mono/4.0/settings.map" }}
-,{ "pid":12345, "tid":11, "ts":1721995005286802, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":11, "ts":1721995005293800, "dur":959, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/WintexSupport/Test/MonoBleedingEdge/etc/mono/4.0/settings.map" }}
-,{ "pid":12345, "tid":11, "ts":1721995005294812, "dur":80, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/WintexSupport/Test/Whoops-whoops_Data/Resources/unity default resources" }}
-,{ "pid":12345, "tid":11, "ts":1721995005294896, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":11, "ts":1721995005294921, "dur":37669, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/WintexSupport/Test/Whoops-whoops_Data/Resources/unity default resources" }}
-,{ "pid":12345, "tid":11, "ts":1721995005332675, "dur":182622, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/WintexSupport/Test/Whoops-whoops_Data/Managed/UnityEngine.UnityWebRequestModule.dll" }}
-,{ "pid":12345, "tid":11, "ts":1721995005515306, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":11, "ts":1721995005515317, "dur":1049, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/WintexSupport/Test/Whoops-whoops_Data/Managed/UnityEngine.UnityWebRequestModule.dll" }}
-,{ "pid":12345, "tid":11, "ts":1721995005516385, "dur":38914, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/WintexSupport/Test/Whoops-whoops_Data/Managed/UnityEngine.RuntimeInitializeOnLoadManagerInitializerModule.dll" }}
-,{ "pid":12345, "tid":11, "ts":1721995005555304, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":11, "ts":1721995005555313, "dur":977, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/WintexSupport/Test/Whoops-whoops_Data/Managed/UnityEngine.RuntimeInitializeOnLoadManagerInitializerModule.dll" }}
-,{ "pid":12345, "tid":11, "ts":1721995005556310, "dur":50516, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/WintexSupport/Test/Whoops-whoops_Data/Managed/UnityEngine.JSONSerializeModule.dll" }}
-,{ "pid":12345, "tid":11, "ts":1721995005606832, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":11, "ts":1721995005606841, "dur":3263, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/WintexSupport/Test/Whoops-whoops_Data/Managed/UnityEngine.JSONSerializeModule.dll" }}
-,{ "pid":12345, "tid":11, "ts":1721995005610125, "dur":101091, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/WintexSupport/Test/Whoops-whoops_Data/Managed/UnityEngine.GameCenterModule.dll" }}
-,{ "pid":12345, "tid":11, "ts":1721995005711219, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":11, "ts":1721995005711226, "dur":884, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/WintexSupport/Test/Whoops-whoops_Data/Managed/UnityEngine.GameCenterModule.dll" }}
-,{ "pid":12345, "tid":11, "ts":1721995005712127, "dur":107872, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/WintexSupport/Test/Whoops-whoops_Data/Managed/Unity.VisualScripting.Antlr3.Runtime.dll" }}
-,{ "pid":12345, "tid":11, "ts":1721995005820006, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":11, "ts":1721995005820016, "dur":1164, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/WintexSupport/Test/Whoops-whoops_Data/Managed/Unity.VisualScripting.Antlr3.Runtime.dll" }}
-,{ "pid":12345, "tid":11, "ts":1721995005821198, "dur":127871, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/WintexSupport/Test/Whoops-whoops_Data/Managed/System.Numerics.dll" }}
-,{ "pid":12345, "tid":11, "ts":1721995005949074, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":11, "ts":1721995005949082, "dur":1086, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/WintexSupport/Test/Whoops-whoops_Data/Managed/System.Numerics.dll" }}
-,{ "pid":12345, "tid":11, "ts":1721995005950187, "dur":185327, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/WintexSupport/Test/Whoops-whoops_Data/Managed/System.Configuration.dll" }}
-,{ "pid":12345, "tid":11, "ts":1721995006135520, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":11, "ts":1721995006135529, "dur":1591, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/WintexSupport/Test/Whoops-whoops_Data/Managed/System.Configuration.dll" }}
-,{ "pid":12345, "tid":11, "ts":1721995006137138, "dur":214682, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":12, "ts":1721995005282779, "dur":194, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":12, "ts":1721995005282973, "dur":3714, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":12, "ts":1721995005286688, "dur":142, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/WintexSupport/Test/MonoBleedingEdge/etc/mono/4.0/DefaultWsdlHelpGenerator.aspx" }}
-,{ "pid":12345, "tid":12, "ts":1721995005286832, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":12, "ts":1721995005294344, "dur":913, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/WintexSupport/Test/MonoBleedingEdge/etc/mono/4.0/DefaultWsdlHelpGenerator.aspx" }}
-,{ "pid":12345, "tid":12, "ts":1721995005295315, "dur":122346, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/WintexSupport/Test/Whoops-whoops_Data/Managed/UnityEngine.XRModule.dll" }}
-,{ "pid":12345, "tid":12, "ts":1721995005417667, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":12, "ts":1721995005417676, "dur":1194, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/WintexSupport/Test/Whoops-whoops_Data/Managed/UnityEngine.XRModule.dll" }}
-,{ "pid":12345, "tid":12, "ts":1721995005418890, "dur":211151, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/WintexSupport/Test/Whoops-whoops_Data/Managed/UnityEngine.TextCoreTextEngineModule.dll" }}
-,{ "pid":12345, "tid":12, "ts":1721995005630044, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":12, "ts":1721995005630052, "dur":1713, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/WintexSupport/Test/Whoops-whoops_Data/Managed/UnityEngine.TextCoreTextEngineModule.dll" }}
-,{ "pid":12345, "tid":12, "ts":1721995005631786, "dur":44354, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/WintexSupport/Test/Whoops-whoops_Data/Managed/UnityEngine.DirectorModule.dll" }}
-,{ "pid":12345, "tid":12, "ts":1721995005676147, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":12, "ts":1721995005676158, "dur":1375, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/WintexSupport/Test/Whoops-whoops_Data/Managed/UnityEngine.DirectorModule.dll" }}
-,{ "pid":12345, "tid":12, "ts":1721995005677554, "dur":71745, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/WintexSupport/Test/Whoops-whoops_Data/Managed/UnityEngine.AIModule.dll" }}
-,{ "pid":12345, "tid":12, "ts":1721995005749304, "dur":6, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":12, "ts":1721995005749317, "dur":2002, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/WintexSupport/Test/Whoops-whoops_Data/Managed/UnityEngine.AIModule.dll" }}
-,{ "pid":12345, "tid":12, "ts":1721995005751345, "dur":101218, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/WintexSupport/Test/Whoops-whoops_Data/Managed/System.Transactions.dll" }}
-,{ "pid":12345, "tid":12, "ts":1721995005852568, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":12, "ts":1721995005852602, "dur":1512, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/WintexSupport/Test/Whoops-whoops_Data/Managed/System.Transactions.dll" }}
-,{ "pid":12345, "tid":12, "ts":1721995005854133, "dur":57198, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/WintexSupport/Test/Whoops-whoops_Data/Managed/System.IO.Compression.FileSystem.dll" }}
-,{ "pid":12345, "tid":12, "ts":1721995005911337, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":12, "ts":1721995005911351, "dur":1071, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/WintexSupport/Test/Whoops-whoops_Data/Managed/System.IO.Compression.FileSystem.dll" }}
-,{ "pid":12345, "tid":12, "ts":1721995005912440, "dur":268490, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/WintexSupport/Test/Whoops-whoops_Data/Managed/System.Data.dll" }}
-,{ "pid":12345, "tid":12, "ts":1721995006180936, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":12, "ts":1721995006180946, "dur":2116, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/WintexSupport/Test/Whoops-whoops_Data/Managed/System.Data.dll" }}
-,{ "pid":12345, "tid":12, "ts":1721995006183084, "dur":168752, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1721995006354100, "dur":1465, "ph":"X", "name": "ProfilerWriteOutput" }
-,{ "pid": 0, "tid": 1, "ts": 1721995006396277, "dur": 564, "ph": "X", "name": "backend_profiler1.traceevents", "args": {} },
-{ "pid": 0, "tid": 1, "ts": 1721995006396005, "dur": 853, "ph": "X", "name": "Write chrome-trace events", "args": {} },
+,{ "pid":12345, "tid":0, "ts":1722177182802616, "dur":1222, "ph":"X", "name": "DriverInitData",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1722177182803849, "dur":80, "ph":"X", "name": "Tundra",  "args": { "detail":"RemoveStaleOutputs" }}
+,{ "pid":12345, "tid":0, "ts":1722177182803938, "dur":17, "ph":"X", "name": "Tundra",  "args": { "detail":"PrepareNodes" }}
+,{ "pid":12345, "tid":0, "ts":1722177182803956, "dur":411, "ph":"X", "name": "Tundra",  "args": { "detail":"BuildQueueInit" }}
+,{ "pid":12345, "tid":0, "ts":1722177182804396, "dur":608, "ph":"X", "name": "EnqueueRequestedNodes",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1722177182805004, "dur":5, "ph":"X", "name": "SortWorkingStack",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1722177183041627, "dur":242, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1722177183041869, "dur":15, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1722177183041884, "dur":3, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1722177183041887, "dur":6, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1722177183041893, "dur":2, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1722177183041895, "dur":6, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1722177183041901, "dur":2, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1722177183041903, "dur":7, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1722177183041910, "dur":2, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1722177183041912, "dur":5, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1722177183041917, "dur":2, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1722177183041919, "dur":6, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1722177183041925, "dur":3, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1722177183041928, "dur":6, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1722177183041934, "dur":2, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1722177183041936, "dur":5, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1722177183041941, "dur":2, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1722177183041943, "dur":6, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1722177183041949, "dur":2, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1722177183041951, "dur":6, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1722177183041957, "dur":2, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1722177183041959, "dur":6, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1722177183041965, "dur":2, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1722177183041967, "dur":5, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1722177183041972, "dur":1, "ph":"X", "name": "SharedResourceDestroy",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1722177183041986, "dur":1, "ph":"X", "name": "BuildQueueDestroyTail",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1722177183042004, "dur":1400, "ph":"X", "name": "Tundra",  "args": { "detail":"Write AllBuiltNodes" }}
+,{ "pid":12345, "tid":1, "ts":1722177182804644, "dur":374, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1722177182805025, "dur":3731, "ph":"X", "name": "CheckDagSignatures",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1722177182808766, "dur":1, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"WriteText Library/Bee/artifacts/WinPlayerBuildProgram/Data/app.info" }}
+,{ "pid":12345, "tid":1, "ts":1722177182808772, "dur":109, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1722177182808887, "dur":2, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/WintexSupport/Test/Whoops-whoops_Data/app.info" }}
+,{ "pid":12345, "tid":1, "ts":1722177182808889, "dur":301, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1722177182809191, "dur":261, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/WintexSupport/Test/MonoBleedingEdge/etc/mono/browscap.ini" }}
+,{ "pid":12345, "tid":1, "ts":1722177182809452, "dur":23, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1722177182809476, "dur":19, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/WintexSupport/Test/Whoops-whoops_Data/Managed/UnityEngine.UnityWebRequestTextureModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1722177182809496, "dur":246, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1722177182809743, "dur":62, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/WintexSupport/Test/Whoops-whoops_Data/Managed/UnityEngine.UnityAnalyticsModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1722177182809806, "dur":178, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1722177182809985, "dur":47, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/WintexSupport/Test/Whoops-whoops_Data/Managed/UnityEngine.SubstanceModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1722177182810032, "dur":220, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1722177182810253, "dur":25, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/WintexSupport/Test/Whoops-whoops_Data/Managed/UnityEngine.IMGUIModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1722177182810278, "dur":312, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1722177182810590, "dur":109961, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/WintexSupport/Test/Whoops-whoops_Data/Managed/Unity.VisualScripting.Core.dll" }}
+,{ "pid":12345, "tid":1, "ts":1722177182920552, "dur":78, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1722177182920632, "dur":121013, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1722177182804678, "dur":358, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1722177182805037, "dur":3725, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1722177182808765, "dur":307, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/WintexSupport/Test/MonoBleedingEdge/etc/mono/4.5/settings.map" }}
+,{ "pid":12345, "tid":2, "ts":1722177182809072, "dur":58, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1722177182809131, "dur":351, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/WintexSupport/Test/MonoBleedingEdge/etc/mono/2.0/machine.config" }}
+,{ "pid":12345, "tid":2, "ts":1722177182809483, "dur":38, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1722177182809522, "dur":20, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/WintexSupport/Test/Whoops-whoops_Data/Managed/UnityEngine.UnityWebRequestModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1722177182809542, "dur":206, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1722177182809749, "dur":28, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/WintexSupport/Test/Whoops-whoops_Data/Managed/UnityEngine.UNETModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1722177182809777, "dur":194, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1722177182809972, "dur":21, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/WintexSupport/Test/Whoops-whoops_Data/Managed/UnityEngine.SubsystemsModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1722177182809993, "dur":189, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1722177182810182, "dur":19, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/WintexSupport/Test/Whoops-whoops_Data/Managed/UnityEngine.Physics2DModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1722177182810201, "dur":36, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1722177182810238, "dur":17, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/WintexSupport/Test/Whoops-whoops_Data/Managed/UnityEngine.JSONSerializeModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1722177182810255, "dur":117, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1722177182810373, "dur":20, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/WintexSupport/Test/Whoops-whoops_Data/Managed/UnityEngine.CrashReportingModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1722177182810393, "dur":188, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1722177182810585, "dur":113213, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/WintexSupport/Test/Whoops-whoops_Data/Managed/Unity.VisualScripting.Flow.dll" }}
+,{ "pid":12345, "tid":2, "ts":1722177182923799, "dur":48, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1722177182923849, "dur":117793, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1722177182804720, "dur":334, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1722177182805055, "dur":3706, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1722177182808765, "dur":339, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/WintexSupport/Test/MonoBleedingEdge/etc/mono/4.5/web.config" }}
+,{ "pid":12345, "tid":3, "ts":1722177182809104, "dur":56, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1722177182809161, "dur":132, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/WintexSupport/Test/MonoBleedingEdge/etc/mono/config" }}
+,{ "pid":12345, "tid":3, "ts":1722177182809294, "dur":25, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1722177182809319, "dur":118, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/WintexSupport/Test/Whoops-whoops_Data/Resources/unity default resources" }}
+,{ "pid":12345, "tid":3, "ts":1722177182809438, "dur":36, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1722177182809475, "dur":17, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/WintexSupport/Test/Whoops-whoops_Data/Managed/UnityEngine.UnityWebRequestWWWModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1722177182809492, "dur":274, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1722177182809767, "dur":24, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/WintexSupport/Test/Whoops-whoops_Data/Managed/UnityEngine.UIElementsNativeModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1722177182809791, "dur":175, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1722177182809967, "dur":27, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/WintexSupport/Test/Whoops-whoops_Data/Managed/UnityEngine.TerrainModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1722177182809994, "dur":215, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1722177182810210, "dur":19, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/WintexSupport/Test/Whoops-whoops_Data/Managed/UnityEngine.ParticleSystemModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1722177182810229, "dur":117, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1722177182810346, "dur":34, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/WintexSupport/Test/Whoops-whoops_Data/Managed/UnityEngine.DSPGraphModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1722177182810380, "dur":117, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1722177182810498, "dur":17, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/WintexSupport/Test/Whoops-whoops_Data/Managed/UnityEngine.AudioModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1722177182810515, "dur":114, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1722177182810630, "dur":102297, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/WintexSupport/Test/Whoops-whoops_Data/Managed/Unity.Timeline.dll" }}
+,{ "pid":12345, "tid":3, "ts":1722177182912928, "dur":77, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1722177182913008, "dur":128628, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1722177182804668, "dur":361, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1722177182805029, "dur":3734, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1722177182808763, "dur":213, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/WintexSupport/Test/MonoBleedingEdge/etc/mono/4.5/machine.config" }}
+,{ "pid":12345, "tid":4, "ts":1722177182808977, "dur":129, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1722177182809107, "dur":274, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/WintexSupport/Test/MonoBleedingEdge/etc/mono/2.0/settings.map" }}
+,{ "pid":12345, "tid":4, "ts":1722177182809382, "dur":22, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1722177182809404, "dur":52, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/WintexSupport/Test/Whoops-whoops_Data/Managed/UnityEngine.VirtualTexturingModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1722177182809456, "dur":282, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1722177182809739, "dur":36, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/WintexSupport/Test/Whoops-whoops_Data/Managed/UnityEngine.UnityConnectModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1722177182809775, "dur":181, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1722177182809957, "dur":31, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/WintexSupport/Test/Whoops-whoops_Data/Managed/UnityEngine.TextRenderingModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1722177182809988, "dur":43, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1722177182810031, "dur":16, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/WintexSupport/Test/Whoops-whoops_Data/Managed/UnityEngine.SharedInternalsModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1722177182810047, "dur":200, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1722177182810248, "dur":28, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/WintexSupport/Test/Whoops-whoops_Data/Managed/UnityEngine.InputLegacyModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1722177182810276, "dur":125, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1722177182810402, "dur":98, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/WintexSupport/Test/Whoops-whoops_Data/Managed/UnityEngine.ClothModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1722177182810500, "dur":33, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1722177182810534, "dur":19, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/WintexSupport/Test/Whoops-whoops_Data/Managed/UnityEngine.AIModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1722177182810553, "dur":43, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1722177182810597, "dur":16, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/WintexSupport/Test/Whoops-whoops_Data/Managed/Unity.VisualScripting.Antlr3.Runtime.dll" }}
+,{ "pid":12345, "tid":4, "ts":1722177182810613, "dur":110, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1722177182810724, "dur":39, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/WintexSupport/Test/Whoops-whoops_Data/Managed/System.Xml.dll" }}
+,{ "pid":12345, "tid":4, "ts":1722177182810763, "dur":23, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1722177182810787, "dur":44, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/WintexSupport/Test/Whoops-whoops_Data/Managed/System.ServiceModel.Internals.dll" }}
+,{ "pid":12345, "tid":4, "ts":1722177182810831, "dur":22, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1722177182810853, "dur":21, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/WintexSupport/Test/Whoops-whoops_Data/Managed/System.Net.Http.dll" }}
+,{ "pid":12345, "tid":4, "ts":1722177182810874, "dur":63, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1722177182810938, "dur":22, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/WintexSupport/Test/Whoops-whoops_Data/Managed/System.dll" }}
+,{ "pid":12345, "tid":4, "ts":1722177182810960, "dur":29, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1722177182810990, "dur":14, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/WintexSupport/Test/Whoops-whoops_Data/Managed/System.ComponentModel.Composition.dll" }}
+,{ "pid":12345, "tid":4, "ts":1722177182811004, "dur":28, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1722177182811033, "dur":56707, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/WintexSupport/Test/Whoops-whoops_Data/Managed/Assembly-CSharp.dll" }}
+,{ "pid":12345, "tid":4, "ts":1722177182867746, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1722177182867791, "dur":1294, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/WintexSupport/Test/Whoops-whoops_Data/Managed/Assembly-CSharp.dll" }}
+,{ "pid":12345, "tid":4, "ts":1722177182869105, "dur":172544, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1722177182804712, "dur":335, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1722177182805047, "dur":3712, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1722177182808764, "dur":185, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/WintexSupport/Test/MonoBleedingEdge/etc/mono/mconfig/config.xml" }}
+,{ "pid":12345, "tid":5, "ts":1722177182808949, "dur":102, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1722177182809051, "dur":148, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/WintexSupport/Test/MonoBleedingEdge/etc/mono/2.0/web.config" }}
+,{ "pid":12345, "tid":5, "ts":1722177182809199, "dur":54, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1722177182809254, "dur":257, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/WintexSupport/Test/UnityPlayer.dll" }}
+,{ "pid":12345, "tid":5, "ts":1722177182809511, "dur":21, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1722177182809533, "dur":12, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/WintexSupport/Test/Whoops-whoops_Data/Managed/UnityEngine.UnityWebRequestAudioModule.dll" }}
+,{ "pid":12345, "tid":5, "ts":1722177182809545, "dur":226, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1722177182809772, "dur":20, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/WintexSupport/Test/Whoops-whoops_Data/Managed/UnityEngine.UIElementsModule.dll" }}
+,{ "pid":12345, "tid":5, "ts":1722177182809792, "dur":269, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1722177182810062, "dur":26, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/WintexSupport/Test/Whoops-whoops_Data/Managed/UnityEngine.ProfilerModule.dll" }}
+,{ "pid":12345, "tid":5, "ts":1722177182810088, "dur":205, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1722177182810294, "dur":31, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/WintexSupport/Test/Whoops-whoops_Data/Managed/UnityEngine.HotReloadModule.dll" }}
+,{ "pid":12345, "tid":5, "ts":1722177182810325, "dur":25, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1722177182810350, "dur":16, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/WintexSupport/Test/Whoops-whoops_Data/Managed/UnityEngine.dll" }}
+,{ "pid":12345, "tid":5, "ts":1722177182810366, "dur":161, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1722177182810528, "dur":32, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/WintexSupport/Test/Whoops-whoops_Data/Managed/UnityEngine.AnimationModule.dll" }}
+,{ "pid":12345, "tid":5, "ts":1722177182810560, "dur":340, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1722177182810901, "dur":43, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/WintexSupport/Test/Whoops-whoops_Data/Managed/System.IO.Compression.dll" }}
+,{ "pid":12345, "tid":5, "ts":1722177182810944, "dur":42, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1722177182810986, "dur":21, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/WintexSupport/Test/Whoops-whoops_Data/Managed/System.Core.dll" }}
+,{ "pid":12345, "tid":5, "ts":1722177182811007, "dur":38, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1722177182811046, "dur":28, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/WintexSupport/Test/Whoops-whoops_Data/Resources/unity_builtin_extra" }}
+,{ "pid":12345, "tid":5, "ts":1722177182811116, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1722177182812893, "dur":4666, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/WintexSupport/Test/Whoops-whoops_Data/Resources/unity_builtin_extra" }}
+,{ "pid":12345, "tid":5, "ts":1722177182817582, "dur":20, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/WintexSupport/Test/Whoops-whoops_Data/sharedassets0.assets" }}
+,{ "pid":12345, "tid":5, "ts":1722177182817610, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1722177182817617, "dur":1912, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/WintexSupport/Test/Whoops-whoops_Data/sharedassets0.assets" }}
+,{ "pid":12345, "tid":5, "ts":1722177182819545, "dur":12490, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/WintexSupport/Test/Whoops-whoops_Data/RuntimeInitializeOnLoads.json" }}
+,{ "pid":12345, "tid":5, "ts":1722177182832035, "dur":60, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1722177182832097, "dur":209540, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1722177182804748, "dur":312, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1722177182805060, "dur":3700, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1722177182808764, "dur":235, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/WintexSupport/Test/MonoBleedingEdge/etc/mono/4.5/Browsers/Compat.browser" }}
+,{ "pid":12345, "tid":6, "ts":1722177182809000, "dur":153, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1722177182809154, "dur":242, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/WintexSupport/Test/MonoBleedingEdge/etc/mono/2.0/DefaultWsdlHelpGenerator.aspx" }}
+,{ "pid":12345, "tid":6, "ts":1722177182809396, "dur":49, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1722177182809446, "dur":32, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/WintexSupport/Test/Whoops-whoops_Data/Managed/UnityEngine.VehiclesModule.dll" }}
+,{ "pid":12345, "tid":6, "ts":1722177182809479, "dur":272, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1722177182809752, "dur":67, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/WintexSupport/Test/Whoops-whoops_Data/Managed/UnityEngine.UIModule.dll" }}
+,{ "pid":12345, "tid":6, "ts":1722177182809820, "dur":145, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1722177182809966, "dur":28, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/WintexSupport/Test/Whoops-whoops_Data/Managed/UnityEngine.TerrainPhysicsModule.dll" }}
+,{ "pid":12345, "tid":6, "ts":1722177182809995, "dur":186, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1722177182810182, "dur":19, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/WintexSupport/Test/Whoops-whoops_Data/Managed/UnityEngine.PhysicsModule.dll" }}
+,{ "pid":12345, "tid":6, "ts":1722177182810201, "dur":40, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1722177182810242, "dur":17, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/WintexSupport/Test/Whoops-whoops_Data/Managed/UnityEngine.InputModule.dll" }}
+,{ "pid":12345, "tid":6, "ts":1722177182810260, "dur":128, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1722177182810389, "dur":20, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/WintexSupport/Test/Whoops-whoops_Data/Managed/UnityEngine.ClusterRendererModule.dll" }}
+,{ "pid":12345, "tid":6, "ts":1722177182810409, "dur":127, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1722177182810536, "dur":18, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/WintexSupport/Test/Whoops-whoops_Data/Managed/UnityEngine.AccessibilityModule.dll" }}
+,{ "pid":12345, "tid":6, "ts":1722177182810554, "dur":292, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1722177182810847, "dur":19, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/WintexSupport/Test/Whoops-whoops_Data/Managed/System.Numerics.dll" }}
+,{ "pid":12345, "tid":6, "ts":1722177182810866, "dur":109, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1722177182810976, "dur":30, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/WintexSupport/Test/Whoops-whoops_Data/Managed/System.Data.dll" }}
+,{ "pid":12345, "tid":6, "ts":1722177182811006, "dur":57, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1722177182811063, "dur":42, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/WintexSupport/Test/Whoops-whoops_Data/sharedassets1.resource" }}
+,{ "pid":12345, "tid":6, "ts":1722177182811109, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1722177182812080, "dur":11585, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/WintexSupport/Test/Whoops-whoops_Data/sharedassets1.resource" }}
+,{ "pid":12345, "tid":6, "ts":1722177182823682, "dur":17, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/WintexSupport/Test/Whoops-whoops_Data/level1" }}
+,{ "pid":12345, "tid":6, "ts":1722177182823704, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1722177182823733, "dur":1652, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/WintexSupport/Test/Whoops-whoops_Data/level1" }}
+,{ "pid":12345, "tid":6, "ts":1722177182825402, "dur":16, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/WintexSupport/Test/Whoops-whoops_Data/globalgamemanagers.assets" }}
+,{ "pid":12345, "tid":6, "ts":1722177182825423, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1722177182825429, "dur":1642, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/WintexSupport/Test/Whoops-whoops_Data/globalgamemanagers.assets" }}
+,{ "pid":12345, "tid":6, "ts":1722177182827089, "dur":214539, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1722177182804787, "dur":279, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1722177182805066, "dur":3740, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1722177182808807, "dur":527, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/WintexSupport/Test/MonoBleedingEdge/etc/mono/4.0/DefaultWsdlHelpGenerator.aspx" }}
+,{ "pid":12345, "tid":7, "ts":1722177182809335, "dur":28, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1722177182809364, "dur":33, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/WintexSupport/Test/Whoops-whoops_Data/Managed/UnityEngine.VRModule.dll" }}
+,{ "pid":12345, "tid":7, "ts":1722177182809397, "dur":339, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1722177182809736, "dur":32, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/WintexSupport/Test/Whoops-whoops_Data/Managed/UnityEngine.UnityCurlModule.dll" }}
+,{ "pid":12345, "tid":7, "ts":1722177182809768, "dur":163, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1722177182809931, "dur":31, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/WintexSupport/Test/Whoops-whoops_Data/Managed/UnityEngine.TilemapModule.dll" }}
+,{ "pid":12345, "tid":7, "ts":1722177182809962, "dur":95, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1722177182810058, "dur":20, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/WintexSupport/Test/Whoops-whoops_Data/Managed/UnityEngine.RuntimeInitializeOnLoadManagerInitializerModule.dll" }}
+,{ "pid":12345, "tid":7, "ts":1722177182810078, "dur":233, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1722177182810312, "dur":42, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/WintexSupport/Test/Whoops-whoops_Data/Managed/UnityEngine.GridModule.dll" }}
+,{ "pid":12345, "tid":7, "ts":1722177182810354, "dur":147, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1722177182810501, "dur":42, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/WintexSupport/Test/Whoops-whoops_Data/Managed/UnityEngine.AssetBundleModule.dll" }}
+,{ "pid":12345, "tid":7, "ts":1722177182810543, "dur":120, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1722177182810664, "dur":20, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/WintexSupport/Test/Whoops-whoops_Data/Managed/System.Xml.Linq.dll" }}
+,{ "pid":12345, "tid":7, "ts":1722177182810684, "dur":133, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1722177182810818, "dur":42, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/WintexSupport/Test/Whoops-whoops_Data/Managed/System.Security.dll" }}
+,{ "pid":12345, "tid":7, "ts":1722177182810860, "dur":142, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1722177182811002, "dur":30, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/WintexSupport/Test/Whoops-whoops_Data/Managed/netstandard.dll" }}
+,{ "pid":12345, "tid":7, "ts":1722177182811032, "dur":38, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1722177182811071, "dur":28, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/WintexSupport/Test/Whoops-whoops_Data/sharedassets1.assets.resS" }}
+,{ "pid":12345, "tid":7, "ts":1722177182811102, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1722177182811471, "dur":8972, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/WintexSupport/Test/Whoops-whoops_Data/sharedassets1.assets.resS" }}
+,{ "pid":12345, "tid":7, "ts":1722177182820455, "dur":2081, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/WintexSupport/Test/Whoops-whoops_Data/level1.resS" }}
+,{ "pid":12345, "tid":7, "ts":1722177182822544, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1722177182822552, "dur":10693, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/WintexSupport/Test/Whoops-whoops_Data/level1.resS" }}
+,{ "pid":12345, "tid":7, "ts":1722177182833264, "dur":208368, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1722177182804814, "dur":259, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1722177182805074, "dur":3714, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1722177182808791, "dur":482, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/WintexSupport/Test/MonoBleedingEdge/etc/mono/4.0/settings.map" }}
+,{ "pid":12345, "tid":8, "ts":1722177182809273, "dur":33, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1722177182809307, "dur":274, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/WintexSupport/Test/UnityCrashHandler64.exe" }}
+,{ "pid":12345, "tid":8, "ts":1722177182809581, "dur":21, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1722177182809602, "dur":18, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/WintexSupport/Test/Whoops-whoops_Data/Managed/UnityEngine.UnityWebRequestAssetBundleModule.dll" }}
+,{ "pid":12345, "tid":8, "ts":1722177182809620, "dur":129, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1722177182809750, "dur":39, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/WintexSupport/Test/Whoops-whoops_Data/Managed/UnityEngine.UmbraModule.dll" }}
+,{ "pid":12345, "tid":8, "ts":1722177182809790, "dur":173, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1722177182809964, "dur":24, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/WintexSupport/Test/Whoops-whoops_Data/Managed/UnityEngine.TextCoreTextEngineModule.dll" }}
+,{ "pid":12345, "tid":8, "ts":1722177182809988, "dur":36, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1722177182810025, "dur":16, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/WintexSupport/Test/Whoops-whoops_Data/Managed/UnityEngine.SpriteMaskModule.dll" }}
+,{ "pid":12345, "tid":8, "ts":1722177182810041, "dur":185, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1722177182810227, "dur":20, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/WintexSupport/Test/Whoops-whoops_Data/Managed/UnityEngine.NVIDIAModule.dll" }}
+,{ "pid":12345, "tid":8, "ts":1722177182810247, "dur":118, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1722177182810366, "dur":26, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/WintexSupport/Test/Whoops-whoops_Data/Managed/UnityEngine.DirectorModule.dll" }}
+,{ "pid":12345, "tid":8, "ts":1722177182810392, "dur":513, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1722177182810906, "dur":39, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/WintexSupport/Test/Whoops-whoops_Data/Managed/System.EnterpriseServices.dll" }}
+,{ "pid":12345, "tid":8, "ts":1722177182810945, "dur":36, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1722177182810982, "dur":16, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/WintexSupport/Test/Whoops-whoops_Data/Managed/System.Data.DataSetExtensions.dll" }}
+,{ "pid":12345, "tid":8, "ts":1722177182810998, "dur":31, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1722177182811029, "dur":15, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/WintexSupport/Test/Whoops-whoops_Data/Managed/mscorlib.dll" }}
+,{ "pid":12345, "tid":8, "ts":1722177182811044, "dur":44, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1722177182811088, "dur":19, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/WintexSupport/Test/Whoops-whoops_Data/sharedassets0.assets.resS" }}
+,{ "pid":12345, "tid":8, "ts":1722177182811113, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1722177182812348, "dur":5558, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/WintexSupport/Test/Whoops-whoops_Data/sharedassets0.assets.resS" }}
+,{ "pid":12345, "tid":8, "ts":1722177182817921, "dur":183, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/WintexSupport/Test/Whoops-whoops_Data/ScriptingAssemblies.json" }}
+,{ "pid":12345, "tid":8, "ts":1722177182818110, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1722177182818115, "dur":1958, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/WintexSupport/Test/Whoops-whoops_Data/ScriptingAssemblies.json" }}
+,{ "pid":12345, "tid":8, "ts":1722177182820087, "dur":13, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/WintexSupport/Test/Whoops-whoops_Data/resources.assets.resS" }}
+,{ "pid":12345, "tid":8, "ts":1722177182820106, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1722177182820112, "dur":3666, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/WintexSupport/Test/Whoops-whoops_Data/resources.assets.resS" }}
+,{ "pid":12345, "tid":8, "ts":1722177182823800, "dur":21, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/WintexSupport/Test/Whoops-whoops_Data/level0.resS" }}
+,{ "pid":12345, "tid":8, "ts":1722177182823827, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1722177182823832, "dur":978, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/WintexSupport/Test/Whoops-whoops_Data/level0.resS" }}
+,{ "pid":12345, "tid":8, "ts":1722177182824828, "dur":17, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/WintexSupport/Test/Whoops-whoops_Data/level0" }}
+,{ "pid":12345, "tid":8, "ts":1722177182824850, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1722177182824855, "dur":971, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/WintexSupport/Test/Whoops-whoops_Data/level0" }}
+,{ "pid":12345, "tid":8, "ts":1722177182825843, "dur":16, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/WintexSupport/Test/Whoops-whoops_Data/globalgamemanagers" }}
+,{ "pid":12345, "tid":8, "ts":1722177182825865, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1722177182825870, "dur":1133, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/WintexSupport/Test/Whoops-whoops_Data/globalgamemanagers" }}
+,{ "pid":12345, "tid":8, "ts":1722177182827020, "dur":189, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/WintexSupport/Test/Whoops-whoops_Data/boot.config" }}
+,{ "pid":12345, "tid":8, "ts":1722177182827209, "dur":36, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1722177182827246, "dur":214379, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":9, "ts":1722177182804849, "dur":230, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":9, "ts":1722177182805080, "dur":3719, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":9, "ts":1722177182808801, "dur":478, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/WintexSupport/Test/MonoBleedingEdge/etc/mono/4.0/machine.config" }}
+,{ "pid":12345, "tid":9, "ts":1722177182809279, "dur":38, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":9, "ts":1722177182809318, "dur":18, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/WintexSupport/Test/Whoops-whoops.exe" }}
+,{ "pid":12345, "tid":9, "ts":1722177182809336, "dur":12, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":9, "ts":1722177182809348, "dur":20, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/WintexSupport/Test/Whoops-whoops_Data/Managed/UnityEngine.XRModule.dll" }}
+,{ "pid":12345, "tid":9, "ts":1722177182809368, "dur":356, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":9, "ts":1722177182809725, "dur":67, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/WintexSupport/Test/Whoops-whoops_Data/Managed/UnityEngine.UnityTestProtocolModule.dll" }}
+,{ "pid":12345, "tid":9, "ts":1722177182809792, "dur":212, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":9, "ts":1722177182810005, "dur":32, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/WintexSupport/Test/Whoops-whoops_Data/Managed/UnityEngine.SpriteShapeModule.dll" }}
+,{ "pid":12345, "tid":9, "ts":1722177182810038, "dur":190, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":9, "ts":1722177182810229, "dur":19, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/WintexSupport/Test/Whoops-whoops_Data/Managed/UnityEngine.LocalizationModule.dll" }}
+,{ "pid":12345, "tid":9, "ts":1722177182810249, "dur":258, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":9, "ts":1722177182810508, "dur":20, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/WintexSupport/Test/Whoops-whoops_Data/Managed/UnityEngine.ARModule.dll" }}
+,{ "pid":12345, "tid":9, "ts":1722177182810528, "dur":118, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":9, "ts":1722177182810646, "dur":230897, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/WintexSupport/Test/Whoops-whoops_Data/Managed/Unity.TextMeshPro.dll" }}
+,{ "pid":12345, "tid":9, "ts":1722177183041544, "dur":51, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":9, "ts":1722177183041598, "dur":0, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"Player" }}
+,{ "pid":12345, "tid":9, "ts":1722177183041598, "dur":0, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":10, "ts":1722177182804891, "dur":196, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":10, "ts":1722177182805088, "dur":3692, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":10, "ts":1722177182808783, "dur":548, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/WintexSupport/Test/MonoBleedingEdge/etc/mono/4.0/web.config" }}
+,{ "pid":12345, "tid":10, "ts":1722177182809331, "dur":24, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":10, "ts":1722177182809356, "dur":19, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/WintexSupport/Test/Whoops-whoops_Data/Managed/UnityEngine.WindModule.dll" }}
+,{ "pid":12345, "tid":10, "ts":1722177182809376, "dur":411, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":10, "ts":1722177182809787, "dur":21, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/WintexSupport/Test/Whoops-whoops_Data/Managed/UnityEngine.TLSModule.dll" }}
+,{ "pid":12345, "tid":10, "ts":1722177182809808, "dur":156, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":10, "ts":1722177182809965, "dur":24, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/WintexSupport/Test/Whoops-whoops_Data/Managed/UnityEngine.TextCoreFontEngineModule.dll" }}
+,{ "pid":12345, "tid":10, "ts":1722177182809989, "dur":63, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":10, "ts":1722177182810053, "dur":15, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/WintexSupport/Test/Whoops-whoops_Data/Managed/UnityEngine.ScreenCaptureModule.dll" }}
+,{ "pid":12345, "tid":10, "ts":1722177182810068, "dur":214, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":10, "ts":1722177182810283, "dur":18, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/WintexSupport/Test/Whoops-whoops_Data/Managed/UnityEngine.ImageConversionModule.dll" }}
+,{ "pid":12345, "tid":10, "ts":1722177182810301, "dur":34, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":10, "ts":1722177182810336, "dur":17, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/WintexSupport/Test/Whoops-whoops_Data/Managed/UnityEngine.GameCenterModule.dll" }}
+,{ "pid":12345, "tid":10, "ts":1722177182810353, "dur":24, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":10, "ts":1722177182810377, "dur":17, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/WintexSupport/Test/Whoops-whoops_Data/Managed/UnityEngine.CoreModule.dll" }}
+,{ "pid":12345, "tid":10, "ts":1722177182810394, "dur":155, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":10, "ts":1722177182810550, "dur":62664, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/WintexSupport/Test/Whoops-whoops_Data/Managed/Unity.VisualScripting.State.dll" }}
+,{ "pid":12345, "tid":10, "ts":1722177182873214, "dur":63, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":10, "ts":1722177182873279, "dur":168355, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":11, "ts":1722177182804929, "dur":164, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":11, "ts":1722177182805093, "dur":3680, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":11, "ts":1722177182808776, "dur":170, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/WintexSupport/Test/MonoBleedingEdge/etc/mono/4.0/Browsers/Compat.browser" }}
+,{ "pid":12345, "tid":11, "ts":1722177182808946, "dur":88, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":11, "ts":1722177182809035, "dur":147, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/WintexSupport/Test/MonoBleedingEdge/etc/mono/2.0/Browsers/Compat.browser" }}
+,{ "pid":12345, "tid":11, "ts":1722177182809182, "dur":62, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":11, "ts":1722177182809245, "dur":125, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/WintexSupport/Test/MonoBleedingEdge/EmbedRuntime/mono-2.0-bdwgc.dll" }}
+,{ "pid":12345, "tid":11, "ts":1722177182809370, "dur":64, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":11, "ts":1722177182809434, "dur":19, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/WintexSupport/Test/Whoops-whoops_Data/Managed/UnityEngine.VideoModule.dll" }}
+,{ "pid":12345, "tid":11, "ts":1722177182809453, "dur":318, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":11, "ts":1722177182809772, "dur":160892, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/WintexSupport/Test/Whoops-whoops_Data/Managed/UnityEngine.UI.dll" }}
+,{ "pid":12345, "tid":11, "ts":1722177182970664, "dur":55, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":11, "ts":1722177182970722, "dur":70919, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":12, "ts":1722177182804971, "dur":129, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":12, "ts":1722177182805100, "dur":3667, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":12, "ts":1722177182808769, "dur":329, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/WintexSupport/Test/MonoBleedingEdge/etc/mono/4.5/DefaultWsdlHelpGenerator.aspx" }}
+,{ "pid":12345, "tid":12, "ts":1722177182809099, "dur":120, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":12, "ts":1722177182809220, "dur":163, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/WintexSupport/Test/MonoBleedingEdge/EmbedRuntime/MonoPosixHelper.dll" }}
+,{ "pid":12345, "tid":12, "ts":1722177182809383, "dur":51, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":12, "ts":1722177182809435, "dur":23, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/WintexSupport/Test/Whoops-whoops_Data/Managed/UnityEngine.VFXModule.dll" }}
+,{ "pid":12345, "tid":12, "ts":1722177182809458, "dur":289, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":12, "ts":1722177182809748, "dur":61, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/WintexSupport/Test/Whoops-whoops_Data/Managed/UnityEngine.UnityAnalyticsCommonModule.dll" }}
+,{ "pid":12345, "tid":12, "ts":1722177182809809, "dur":175, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":12, "ts":1722177182809985, "dur":22, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/WintexSupport/Test/Whoops-whoops_Data/Managed/UnityEngine.StreamingModule.dll" }}
+,{ "pid":12345, "tid":12, "ts":1722177182810007, "dur":187, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":12, "ts":1722177182810195, "dur":20, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/WintexSupport/Test/Whoops-whoops_Data/Managed/UnityEngine.PerformanceReportingModule.dll" }}
+,{ "pid":12345, "tid":12, "ts":1722177182810215, "dur":119, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":12, "ts":1722177182810335, "dur":19, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/WintexSupport/Test/Whoops-whoops_Data/Managed/UnityEngine.GIModule.dll" }}
+,{ "pid":12345, "tid":12, "ts":1722177182810354, "dur":38, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":12, "ts":1722177182810392, "dur":16, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/WintexSupport/Test/Whoops-whoops_Data/Managed/UnityEngine.ClusterInputModule.dll" }}
+,{ "pid":12345, "tid":12, "ts":1722177182810409, "dur":121, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":12, "ts":1722177182810531, "dur":18, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/WintexSupport/Test/Whoops-whoops_Data/Managed/UnityEngine.AndroidJNIModule.dll" }}
+,{ "pid":12345, "tid":12, "ts":1722177182810549, "dur":210, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":12, "ts":1722177182810760, "dur":18, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/WintexSupport/Test/Whoops-whoops_Data/Managed/System.Transactions.dll" }}
+,{ "pid":12345, "tid":12, "ts":1722177182810778, "dur":42, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":12, "ts":1722177182810820, "dur":15, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/WintexSupport/Test/Whoops-whoops_Data/Managed/System.Runtime.Serialization.dll" }}
+,{ "pid":12345, "tid":12, "ts":1722177182810835, "dur":26, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":12, "ts":1722177182810862, "dur":16, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/WintexSupport/Test/Whoops-whoops_Data/Managed/System.IO.Compression.FileSystem.dll" }}
+,{ "pid":12345, "tid":12, "ts":1722177182810878, "dur":43, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":12, "ts":1722177182810922, "dur":25, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/WintexSupport/Test/Whoops-whoops_Data/Managed/System.Drawing.dll" }}
+,{ "pid":12345, "tid":12, "ts":1722177182810947, "dur":40, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":12, "ts":1722177182810987, "dur":15, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/WintexSupport/Test/Whoops-whoops_Data/Managed/System.Configuration.dll" }}
+,{ "pid":12345, "tid":12, "ts":1722177182811002, "dur":30, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":12, "ts":1722177182811032, "dur":15, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/WintexSupport/Test/Whoops-whoops_Data/Managed/Mono.Security.dll" }}
+,{ "pid":12345, "tid":12, "ts":1722177182811047, "dur":39, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":12, "ts":1722177182811087, "dur":14, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/WintexSupport/Test/Whoops-whoops_Data/sharedassets1.assets" }}
+,{ "pid":12345, "tid":12, "ts":1722177182811106, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":12, "ts":1722177182811753, "dur":8604, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/WintexSupport/Test/Whoops-whoops_Data/sharedassets1.assets" }}
+,{ "pid":12345, "tid":12, "ts":1722177182820373, "dur":16, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/WintexSupport/Test/Whoops-whoops_Data/resources.assets" }}
+,{ "pid":12345, "tid":12, "ts":1722177182820394, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":12, "ts":1722177182820399, "dur":7300, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/WintexSupport/Test/Whoops-whoops_Data/resources.assets" }}
+,{ "pid":12345, "tid":12, "ts":1722177182827717, "dur":213909, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1722177183044526, "dur":1202, "ph":"X", "name": "ProfilerWriteOutput" }
+,{ "pid": 0, "tid": 1, "ts": 1722177183070473, "dur": 488, "ph": "X", "name": "backend_profiler1.traceevents", "args": {} },
+{ "pid": 0, "tid": 1, "ts": 1722177183069740, "dur": 1237, "ph": "X", "name": "Write chrome-trace events", "args": {} },
