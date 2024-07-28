@@ -17,11 +17,18 @@ public class GameManager : MonoBehaviour, IDataPersistence
     private int matches;
     private int turns;
     private int score;
+    private int combo;
 
     [Header("Cards Info")]
+    public GameObject[] CardLayoutOptions;
+    private GameObject CardStack;
     private int clickedCardsQty;
     private List<GameObject> clickedCards;
     private float flipBackDelay = 1f;
+
+    [Header("End Panel")]
+    public GameObject EndGamePanel;
+    public TMP_Text EndingScoreText;
 
     [Header("Audio")]
     public AudioSource audioSource;
@@ -32,11 +39,6 @@ public class GameManager : MonoBehaviour, IDataPersistence
 
     public delegate void GameActivityUpdated();
     public event GameActivityUpdated OnGameEndedActivity;
-    public GameObject EndGamePanel;
-    public TMP_Text EndingScoreText;
-
-    public GameObject[] CardLayoutOptions;
-    private GameObject CardStack;
 
     private void Awake()
     {
@@ -63,6 +65,7 @@ public class GameManager : MonoBehaviour, IDataPersistence
         this.matches = data.matches;
         this.turns = data.turns;
         this.score = data.score;
+        this.combo = data.combo;
     }
 
     public void SaveData(ref GameData data)
@@ -70,6 +73,7 @@ public class GameManager : MonoBehaviour, IDataPersistence
         data.matches = this.matches;
         data.turns = this.turns;
         data.score = this.score;
+        data.combo = this.combo;
     }
 
     private void Start()
@@ -129,7 +133,10 @@ public class GameManager : MonoBehaviour, IDataPersistence
         int flipInfo = 0;
         if (firstCardManager.cardIndicator == secondCardManager.cardIndicator)
         {
+            combo++;
+            score += combo;
             matches++;
+
             clickedCards[0].SetActive(false);
             clickedCards[1].SetActive(false);
             audioSource.PlayOneShot(correctSFX);
@@ -137,6 +144,7 @@ public class GameManager : MonoBehaviour, IDataPersistence
         }
         else
         {
+            combo = 0;
             StartCoroutine(firstCardManager.FlipCard(0f));
             StartCoroutine(secondCardManager.FlipCard(0f));
             audioSource.PlayOneShot(wrongSFX);
@@ -147,9 +155,6 @@ public class GameManager : MonoBehaviour, IDataPersistence
 
         clickedCardsQty = 0;
         clickedCards.Clear();
-
-        // temporary score
-        score = matches;
 
         if (matches == CardStackManager.Instance.totalCards / 2) { OnGameEndedActivity.Invoke(); }
     }
