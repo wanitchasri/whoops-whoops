@@ -204,7 +204,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 693889864}
   toggleTransition: 1
   graphic: {fileID: 282413399}
-  m_Group: {fileID: 0}
+  m_Group: {fileID: 2002011879}
   onValueChanged:
     m_PersistentCalls:
       m_Calls: []
@@ -1293,7 +1293,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1417815715}
   toggleTransition: 1
   graphic: {fileID: 915405147}
-  m_Group: {fileID: 0}
+  m_Group: {fileID: 2002011879}
   onValueChanged:
     m_PersistentCalls:
       m_Calls: []
@@ -1577,7 +1577,7 @@ GameObject:
   - component: {fileID: 1300798548}
   - component: {fileID: 1300798547}
   m_Layer: 0
-  m_Name: HomeManager
+  m_Name: MenuManager
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1595,6 +1595,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 69e94329059015e4084ec146a0965983, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  ModeOptionsToggle: {fileID: 2002011879}
 --- !u!4 &1300798548
 Transform:
   m_ObjectHideFlags: 0
@@ -2082,6 +2083,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2002011878}
+  - component: {fileID: 2002011879}
   m_Layer: 5
   m_Name: ModeOptions
   m_TagString: Untagged
@@ -2112,6 +2114,19 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 100}
   m_SizeDelta: {x: 424.72742, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &2002011879
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2002011877}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2fafe2cfe61f6974895a912c3755e8f1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_AllowSwitchOff: 0
 --- !u!1 &2083720468
 GameObject:
   m_ObjectHideFlags: 0
@@ -2329,8 +2344,8 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1394844419}
   toggleTransition: 1
   graphic: {fileID: 382806102}
-  m_Group: {fileID: 0}
+  m_Group: {fileID: 2002011879}
   onValueChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_IsOn: 0
+  m_IsOn: 1

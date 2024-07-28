@@ -350,7 +350,7 @@
 "Assets/Scripts/GameDataManagers/GameData.cs"
 "Assets/Scripts/GameDataManagers/IDataPersistence.cs"
 "Assets/Scripts/GameManager.cs"
-"Assets/Scripts/HomeManager.cs"
+"Assets/Scripts/MenuManager.cs"
 -langversion:9.0
 /deterministic
 /optimize+

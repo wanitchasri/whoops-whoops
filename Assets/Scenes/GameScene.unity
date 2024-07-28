@@ -6046,7 +6046,7 @@ GameObject:
   - component: {fileID: 1905914905}
   - component: {fileID: 1905914907}
   m_Layer: 0
-  m_Name: CardLayout
+  m_Name: EasyCardLayout
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

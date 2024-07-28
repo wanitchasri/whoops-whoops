@@ -63,9 +63,9 @@
     <Compile Include="Assets\Scripts\GameManager.cs" />
     <Compile Include="Assets\Scripts\CardManager.cs" />
     <Compile Include="Assets\Scripts\GameDataManagers\DataPersistenceManager.cs" />
-    <Compile Include="Assets\Scripts\GameDataManagers\GameData.cs" />
-    <Compile Include="Assets\Scripts\HomeManager.cs" />
     <Compile Include="Assets\Scripts\GameDataManagers\FileDataHandler.cs" />
+    <Compile Include="Assets\Scripts\GameDataManagers\GameData.cs" />
+    <Compile Include="Assets\Scripts\MenuManager.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
