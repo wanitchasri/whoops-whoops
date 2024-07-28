@@ -23,13 +23,21 @@ public class GameManager : MonoBehaviour, IDataPersistence
     private List<GameObject> clickedCards;
     private float flipBackDelay = 1f;
 
-
+    public delegate void GameActivityUpdated();
+    public event GameActivityUpdated OnGameEndedActivity;
+    public GameObject EndGamePanel;
+    public TMP_Text EndingScoreText;
 
     public List<int> cardFlipInfo;
 
     private void Awake()
     {
         Instance = this;
+    }
+
+    private void OnEnable()
+    {
+        OnGameEndedActivity += OnGameEnded;
     }
 
     public void LoadData(GameData data)
@@ -58,7 +66,7 @@ public class GameManager : MonoBehaviour, IDataPersistence
         ScoreText.text = score.ToString();
 
         DetectCardClicks();
-
+        if (matches == CardStackManager.Instance.totalCards / 2) { OnGameEndedActivity.Invoke(); }
     }
 
     private void DetectCardClicks()
@@ -125,7 +133,8 @@ public class GameManager : MonoBehaviour, IDataPersistence
 
     public void OnGameEnded()
     {
-        OnHomeButtonClicked();
+        EndingScoreText.text = score.ToString();
+        EndGamePanel.SetActive(true);
     }
 
     public void OnHomeButtonClicked()

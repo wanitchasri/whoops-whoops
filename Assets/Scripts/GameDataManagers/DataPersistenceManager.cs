@@ -23,6 +23,10 @@ public class DataPersistenceManager : MonoBehaviour
         Instance = this;
     }
 
+    private void OnEnable()
+    {
+        GameManager.Instance.OnGameEndedActivity += OnGameEnded;
+    }
 
     private void Start()
     {
@@ -39,6 +43,11 @@ public class DataPersistenceManager : MonoBehaviour
     public void OnHomeButtonClicked()
     {
         SaveGame();
+    }
+
+    public void OnGameEnded()
+    {
+        dataHandler.RemoveFile();
     }
 
     public void NewGame()
