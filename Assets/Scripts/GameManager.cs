@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 using TMPro;
 
-public class GameManager : MonoBehaviour
+public class GameManager : MonoBehaviour, IDataPersistence
 {
     [Header("Score Texts")]
     public TMP_Text MatchesText;
@@ -18,6 +18,20 @@ public class GameManager : MonoBehaviour
     private int clickedCardsQty;
     private List<GameObject> clickedCards;
     private float flipBackDelay = 1f;
+
+    public void LoadData(GameData data)
+    {
+        this.matches = data.matches;
+        this.turns = data.turns;
+        this.score = data.score;
+    }
+
+    public void SaveData(ref GameData data)
+    {
+        data.matches = this.matches;
+        data.turns = this.turns;
+        data.score = this.score;
+    }
 
     private void Start()
     {
