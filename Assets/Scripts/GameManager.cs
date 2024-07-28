@@ -26,9 +26,11 @@ public class GameManager : MonoBehaviour, IDataPersistence
     private List<GameObject> clickedCards;
     private float flipBackDelay = 1f;
 
-    [Header("End Panel")]
+    [Header("Front Panels")]
     public GameObject EndGamePanel;
     public TMP_Text EndingScoreText;
+    public GameObject ComboAlertText;
+    public TMP_Text ComboText;
 
     [Header("Audio")]
     public AudioSource audioSource;
@@ -137,6 +139,11 @@ public class GameManager : MonoBehaviour, IDataPersistence
             score += combo;
             matches++;
 
+            if (combo > 1)
+            {
+                StartCoroutine(ShowCombo());
+            }
+
             clickedCards[0].SetActive(false);
             clickedCards[1].SetActive(false);
             audioSource.PlayOneShot(correctSFX);
@@ -157,6 +164,16 @@ public class GameManager : MonoBehaviour, IDataPersistence
         clickedCards.Clear();
 
         if (matches == CardStackManager.Instance.totalCards / 2) { OnGameEndedActivity.Invoke(); }
+    }
+
+    IEnumerator ShowCombo()
+    {
+        ComboText.text = combo.ToString();
+        ComboAlertText.SetActive(true);
+
+        yield return new WaitForSeconds(1f);
+
+        ComboAlertText.SetActive(false);
     }
 
     public void OnGameEnded()
