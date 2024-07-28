@@ -6,7 +6,7 @@ using UnityEngine.SceneManagement;
 
 public class DataPersistenceManager : MonoBehaviour
 {
-    private string fileName = "gameData";
+    private string fileName; //= "gameData";
 
     private GameData gameData;
     private List<IDataPersistence> dataPersistenceObjects;
@@ -30,6 +30,9 @@ public class DataPersistenceManager : MonoBehaviour
 
     private void Start()
     {
+        string gameMode = MenuManager.Instance.gameMode;
+        fileName = gameMode + "ModeData";
+
         this.dataHandler = new FileDataHandler(Application.persistentDataPath, fileName);
         this.dataPersistenceObjects = FindAllDataPersistenceObjects();
         LoadGame();    

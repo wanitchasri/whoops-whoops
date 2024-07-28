@@ -29,15 +29,25 @@ public class GameManager : MonoBehaviour, IDataPersistence
     public TMP_Text EndingScoreText;
 
     public List<int> cardFlipInfo;
+    public GameObject[] CardLayoutOptions;
 
     private void Awake()
     {
         Instance = this;
+
+        string gameMode = MenuManager.Instance.gameMode;
+        int modeID = gameMode switch { "Easy" => 0, "Medium" => 1, _ => 2, };
+        CardLayoutOptions[modeID].SetActive(true);
     }
 
     private void OnEnable()
     {
         OnGameEndedActivity += OnGameEnded;
+    }
+
+    private void OnDisable()
+    {
+        OnGameEndedActivity -= OnGameEnded;
     }
 
     public void LoadData(GameData data)

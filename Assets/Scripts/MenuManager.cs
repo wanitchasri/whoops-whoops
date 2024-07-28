@@ -21,7 +21,6 @@ public class MenuManager : MonoBehaviour
     {
         string chosenToggle = ModeOptionsToggle.ActiveToggles().First().gameObject.name;
         gameMode = chosenToggle.Replace("Toggle", "");
-        Debug.Log(gameMode);
         SceneManager.LoadScene("GameScene");
     }
 

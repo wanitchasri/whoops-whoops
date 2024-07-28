@@ -12,7 +12,6 @@ public class CardStackManager : MonoBehaviour, IDataPersistence
     public List<Sprite> pictureList;
 
     [Header("Game Info")]
-    private string gameMode = "easy";
     public int totalCards;
     public List<Sprite> cardPictures;
     public List<int> cardFlipInfo;
@@ -66,11 +65,11 @@ public class CardStackManager : MonoBehaviour, IDataPersistence
 
     void SetTotalCards()
     {
-        totalCards = gameMode switch
+        totalCards = MenuManager.Instance.gameMode switch
         {
-            "easy" => 16,
-            "medium" => 24,
-            "hard" => 32,
+            "Easy" => 16,
+            "Medium" => 24,
+            "Hard" => 32,
             _ => throw new System.NotImplementedException(),
         };
         for (int i = 0; i < totalCards; i++) { cardFlipInfo.Add(0); }
