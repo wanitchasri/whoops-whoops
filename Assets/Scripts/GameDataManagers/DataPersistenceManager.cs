@@ -30,8 +30,7 @@ public class DataPersistenceManager : MonoBehaviour
 
     private void Start()
     {
-        string gameMode = MenuManager.Instance.gameMode;
-        fileName = gameMode + "ModeData";
+        fileName = MenuManager.Instance.gameMode + "ModeData";
 
         this.dataHandler = new FileDataHandler(Application.persistentDataPath, fileName);
         this.dataPersistenceObjects = FindAllDataPersistenceObjects();

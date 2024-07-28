@@ -23,13 +23,20 @@ public class GameManager : MonoBehaviour, IDataPersistence
     private List<GameObject> clickedCards;
     private float flipBackDelay = 1f;
 
+    [Header("Audio")]
+    public AudioSource audioSource;
+    public AudioClip cardFlipSFX;
+    public AudioClip wrongSFX;
+    public AudioClip correctSFX;
+    public AudioClip winSFX;
+
     public delegate void GameActivityUpdated();
     public event GameActivityUpdated OnGameEndedActivity;
     public GameObject EndGamePanel;
     public TMP_Text EndingScoreText;
 
-    public List<int> cardFlipInfo;
     public GameObject[] CardLayoutOptions;
+    private GameObject CardStack;
 
     private void Awake()
     {
@@ -37,7 +44,8 @@ public class GameManager : MonoBehaviour, IDataPersistence
 
         string gameMode = MenuManager.Instance.gameMode;
         int modeID = gameMode switch { "Easy" => 0, "Medium" => 1, _ => 2, };
-        CardLayoutOptions[modeID].SetActive(true);
+        CardStack = CardLayoutOptions[modeID];
+        CardStack.SetActive(true);
     }
 
     private void OnEnable()
@@ -76,7 +84,6 @@ public class GameManager : MonoBehaviour, IDataPersistence
         ScoreText.text = score.ToString();
 
         DetectCardClicks();
-        if (matches == CardStackManager.Instance.totalCards / 2) { OnGameEndedActivity.Invoke(); }
     }
 
     private void DetectCardClicks()
@@ -94,13 +101,16 @@ public class GameManager : MonoBehaviour, IDataPersistence
                     CardManager cardManager = clickedCard.GetComponent<CardManager>();
                     if (!cardManager.cardClicked)
                     {
+                        audioSource.PlayOneShot(cardFlipSFX);
                         StartCoroutine(cardManager.FlipCard(-180f));
+
                         clickedCardsQty++;
                         clickedCards.Add(clickedCard);
-                        cardFlipInfo = CardStackManager.Instance.cardFlipInfo;
+
+                        List<int> cardFlipInfo = CardStack.GetComponent<CardStackManager>().cardFlipInfo;
                         cardFlipInfo[cardManager.cardIndex] = 1;
 
-                        if (clickedCardsQty == 2) { StartCoroutine(VerifyCardMatch()); }
+                        if (clickedCardsQty == 2) { StartCoroutine(VerifyCardMatch(cardFlipInfo)); }
                     }
 
                 }
@@ -108,7 +118,7 @@ public class GameManager : MonoBehaviour, IDataPersistence
         }
     }
 
-    IEnumerator VerifyCardMatch()
+    IEnumerator VerifyCardMatch(List<int> cardFlipInfo)
     {
         turns++;
         yield return new WaitForSeconds(flipBackDelay);
@@ -122,13 +132,14 @@ public class GameManager : MonoBehaviour, IDataPersistence
             matches++;
             clickedCards[0].SetActive(false);
             clickedCards[1].SetActive(false);
-
+            audioSource.PlayOneShot(correctSFX);
             flipInfo = -1;
         }
         else
         {
             StartCoroutine(firstCardManager.FlipCard(0f));
             StartCoroutine(secondCardManager.FlipCard(0f));
+            audioSource.PlayOneShot(wrongSFX);
         }
 
         cardFlipInfo[firstCardManager.cardIndex] = flipInfo;
@@ -139,12 +150,15 @@ public class GameManager : MonoBehaviour, IDataPersistence
 
         // temporary score
         score = matches;
+
+        if (matches == CardStackManager.Instance.totalCards / 2) { OnGameEndedActivity.Invoke(); }
     }
 
     public void OnGameEnded()
     {
         EndingScoreText.text = score.ToString();
         EndGamePanel.SetActive(true);
+        audioSource.PlayOneShot(winSFX);
     }
 
     public void OnHomeButtonClicked()

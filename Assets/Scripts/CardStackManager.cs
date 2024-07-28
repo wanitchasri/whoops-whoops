@@ -25,6 +25,8 @@ public class CardStackManager : MonoBehaviour, IDataPersistence
     {
         this.cardPictures = data.cardPictures;
         this.cardFlipInfo = data.cardFlipInfo;
+
+        ArrangeCardStack();
     }
 
     void LoadCardFlipInfo()
@@ -54,7 +56,7 @@ public class CardStackManager : MonoBehaviour, IDataPersistence
         data.cardFlipInfo = this.cardFlipInfo;
     }
 
-    void Start()
+    void ArrangeCardStack()
     {
         SetTotalCards();
         GetCards();
