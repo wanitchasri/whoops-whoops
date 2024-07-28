@@ -21,6 +21,16 @@ public class CardStackManager : MonoBehaviour, IDataPersistence
         Instance = this;
     }
 
+    private void OnEnable()
+    {
+        GameManager.Instance.OnGameRestartedActivity += OnGameRestarted;
+    }
+
+    private void OnDisable()
+    {
+        GameManager.Instance.OnGameRestartedActivity -= OnGameRestarted;   
+    }
+
     public void LoadData(GameData data)
     {
         this.cardPictures = data.cardPictures;
@@ -40,7 +50,7 @@ public class CardStackManager : MonoBehaviour, IDataPersistence
             switch (flipInfo)
             {
                 case 1:
-                    card.transform.Rotate(0, -180f, 0);
+                    card.transform.Rotate(0, -180, 0);
                     break;
 
                 case -1:
@@ -54,6 +64,11 @@ public class CardStackManager : MonoBehaviour, IDataPersistence
     {
         data.cardPictures = this.cardPictures;
         data.cardFlipInfo = this.cardFlipInfo;
+    }
+
+    private void OnGameRestarted()
+    {
+        // ArrangeCardStack();
     }
 
     void ArrangeCardStack()
@@ -79,9 +94,16 @@ public class CardStackManager : MonoBehaviour, IDataPersistence
 
     void GetCards()
     {
+        if (Cards.Count > 0) { Cards.Clear(); }
         foreach (Transform cardTransform in GetComponentInChildren<Transform>())
         {
-            Cards.Add(cardTransform.gameObject);
+            GameObject Card = cardTransform.gameObject;
+            if (!Card.activeSelf) 
+            { 
+                Card.SetActive(true);
+                Card.transform.rotation = Quaternion.Euler(0, 0, 0);
+            }
+            Cards.Add(Card);
         }
     }
 

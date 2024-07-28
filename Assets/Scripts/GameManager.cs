@@ -41,6 +41,7 @@ public class GameManager : MonoBehaviour, IDataPersistence
 
     public delegate void GameActivityUpdated();
     public event GameActivityUpdated OnGameEndedActivity;
+    public event GameActivityUpdated OnGameRestartedActivity;
 
     private void Awake()
     {
@@ -186,5 +187,10 @@ public class GameManager : MonoBehaviour, IDataPersistence
     public void OnHomeButtonClicked()
     {
         SceneManager.LoadScene("HomeScene");
+    }
+
+    public void OnRestartButtonClicked()
+    {
+        OnGameRestartedActivity.Invoke();
     }
 }

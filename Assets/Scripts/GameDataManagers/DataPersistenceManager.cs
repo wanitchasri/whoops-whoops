@@ -47,6 +47,13 @@ public class DataPersistenceManager : MonoBehaviour
         SaveGame();
     }
 
+    public void OnRestartButtonClicked()
+    {
+        dataHandler.RemoveFile();
+        NewGame();
+        LoadGame();
+    }
+
     public void OnGameEnded()
     {
         dataHandler.RemoveFile();

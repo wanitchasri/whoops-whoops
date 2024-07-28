@@ -839,7 +839,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Welcome! Player
+  m_text: Welcome!
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 663b7b66d01b37a4eabf0b36d68f0846, type: 2}
   m_sharedMaterial: {fileID: 451841100550855443, guid: 663b7b66d01b37a4eabf0b36d68f0846, type: 2}
@@ -1595,6 +1595,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 69e94329059015e4084ec146a0965983, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  gameMode: 
   ModeOptionsToggle: {fileID: 2002011879}
 --- !u!4 &1300798548
 Transform:
