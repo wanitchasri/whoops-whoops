@@ -7,13 +7,14 @@ using System.Linq;
 
 public class MenuManager : MonoBehaviour
 {
+    public static bool enteredGame;
+
     public static MenuManager Instance;
     public string gameMode;
     public ToggleGroup ModeOptionsToggle;
 
     private void Awake()
     {
-        DontDestroyOnLoad(this);
         Instance = this;    
     }
 
@@ -22,6 +23,6 @@ public class MenuManager : MonoBehaviour
         string chosenToggle = ModeOptionsToggle.ActiveToggles().First().gameObject.name;
         gameMode = chosenToggle.Replace("Toggle", "");
         SceneManager.LoadScene("GameScene");
+        DontDestroyOnLoad(this);
     }
-
 }

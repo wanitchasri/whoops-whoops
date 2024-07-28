@@ -42,6 +42,7 @@ public class GameManager : MonoBehaviour, IDataPersistence
     public delegate void GameActivityUpdated();
     public event GameActivityUpdated OnGameEndedActivity;
     public event GameActivityUpdated OnGameRestartedActivity;
+    public event GameActivityUpdated OnLeftGameActivity;
 
     private void Awake()
     {
@@ -50,17 +51,27 @@ public class GameManager : MonoBehaviour, IDataPersistence
         string gameMode = MenuManager.Instance.gameMode;
         int modeID = gameMode switch { "Easy" => 0, "Medium" => 1, _ => 2, };
         CardStack = CardLayoutOptions[modeID];
-        CardStack.SetActive(true);
+        for (int i = 0; i < CardLayoutOptions.Length; i++)
+        {
+            if (i == modeID)
+            {
+                CardStack = CardLayoutOptions[i];
+                CardStack.SetActive(true);
+            }
+            else { CardLayoutOptions[i].SetActive(false); }
+        }
     }
 
     private void OnEnable()
     {
         OnGameEndedActivity += OnGameEnded;
+        OnLeftGameActivity += OnLeftGame;
     }
 
     private void OnDisable()
     {
         OnGameEndedActivity -= OnGameEnded;
+        OnLeftGameActivity -= OnLeftGame;
     }
 
     public void LoadData(GameData data)
@@ -182,11 +193,21 @@ public class GameManager : MonoBehaviour, IDataPersistence
         EndingScoreText.text = score.ToString();
         EndGamePanel.SetActive(true);
         audioSource.PlayOneShot(winSFX);
+        OnLeftGameActivity?.Invoke();
     }
 
     public void OnHomeButtonClicked()
     {
+        OnLeftGameActivity?.Invoke();
         SceneManager.LoadScene("HomeScene");
+    }
+
+    public void OnLeftGame()
+    {
+        if (MenuManager.Instance != null)
+        {
+            Destroy(MenuManager.Instance.gameObject);
+        }
     }
 
     public void OnRestartButtonClicked()
