@@ -3,16 +3,57 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class CardStackManager : MonoBehaviour
+public class CardStackManager : MonoBehaviour, IDataPersistence
 {
+    public static CardStackManager Instance;
+
     [Header("Card Indicators")]
     public List<GameObject> Cards;
     public List<Sprite> pictureList;
 
     [Header("Game Info")]
     private string gameMode = "easy";
-    private int totalCards;
-    private List<Sprite> cardPictures;
+    public int totalCards;
+    public List<Sprite> cardPictures;
+    public List<int> cardFlipInfo;
+
+    private void Awake()
+    {
+        Instance = this;
+    }
+
+    public void LoadData(GameData data)
+    {
+        this.cardPictures = data.cardPictures;
+        this.cardFlipInfo = data.cardFlipInfo;
+    }
+
+    void LoadCardFlipInfo()
+    {
+        for (int i = 0; i < Cards.Count; i++)
+        {
+            GameObject card = Cards[i];
+            CardManager cardManager = card.GetComponent<CardManager>();
+
+            int flipInfo = cardFlipInfo[cardManager.cardIndex];
+            switch (flipInfo)
+            {
+                case 1:
+                    card.transform.Rotate(0, -180f, 0);
+                    break;
+
+                case -1:
+                    card.gameObject.SetActive(false);
+                    break;
+            }
+        }
+    }
+
+    public void SaveData(ref GameData data)
+    {
+        data.cardPictures = this.cardPictures;
+        data.cardFlipInfo = this.cardFlipInfo;
+    }
 
     void Start()
     {
@@ -32,6 +73,7 @@ public class CardStackManager : MonoBehaviour
             "hard" => 32,
             _ => throw new System.NotImplementedException(),
         };
+        for (int i = 0; i < totalCards; i++) { cardFlipInfo.Add(0); }
     }
 
     void GetCards()
@@ -68,8 +110,13 @@ public class CardStackManager : MonoBehaviour
             GameObject card = Cards[i];
             Image cardPic = card.transform.Find("Canvas/CardPicture").GetComponent<Image>();
             cardPic.sprite = cardPictures[i];
-            card.GetComponent<CardManager>().cardIndicator = cardPic.sprite.name;
+
+            CardManager cardManager = card.GetComponent<CardManager>();
+            cardManager.cardIndex = i;
+            cardManager.cardIndicator = cardPic.sprite.name;
         }
+
+        LoadCardFlipInfo();
     }
 
 }

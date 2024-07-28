@@ -6,18 +6,31 @@ using TMPro;
 
 public class GameManager : MonoBehaviour, IDataPersistence
 {
+    public static GameManager Instance;
+
     [Header("Score Texts")]
     public TMP_Text MatchesText;
     public TMP_Text TurnsText;
     public TMP_Text ScoreText;
 
-    [Header("Game Info")]
+    [Header("Score Info")]
     private int matches;
     private int turns;
     private int score;
+
+    [Header("Cards Info")]
     private int clickedCardsQty;
     private List<GameObject> clickedCards;
     private float flipBackDelay = 1f;
+
+
+
+    public List<int> cardFlipInfo;
+
+    private void Awake()
+    {
+        Instance = this;
+    }
 
     public void LoadData(GameData data)
     {
@@ -35,7 +48,7 @@ public class GameManager : MonoBehaviour, IDataPersistence
 
     private void Start()
     {
-        clickedCards = new List<GameObject>();    
+        clickedCards = new List<GameObject>();
     }
 
     private void Update()
@@ -45,6 +58,7 @@ public class GameManager : MonoBehaviour, IDataPersistence
         ScoreText.text = score.ToString();
 
         DetectCardClicks();
+
     }
 
     private void DetectCardClicks()
@@ -65,6 +79,8 @@ public class GameManager : MonoBehaviour, IDataPersistence
                         StartCoroutine(cardManager.FlipCard(-180f));
                         clickedCardsQty++;
                         clickedCards.Add(clickedCard);
+                        cardFlipInfo = CardStackManager.Instance.cardFlipInfo;
+                        cardFlipInfo[cardManager.cardIndex] = 1;
 
                         if (clickedCardsQty == 2) { StartCoroutine(VerifyCardMatch()); }
                     }
@@ -82,11 +98,14 @@ public class GameManager : MonoBehaviour, IDataPersistence
         CardManager firstCardManager = clickedCards[0].GetComponent<CardManager>();
         CardManager secondCardManager = clickedCards[1].GetComponent<CardManager>();
 
+        int flipInfo = 0;
         if (firstCardManager.cardIndicator == secondCardManager.cardIndicator)
         {
             matches++;
             clickedCards[0].SetActive(false);
             clickedCards[1].SetActive(false);
+
+            flipInfo = -1;
         }
         else
         {
@@ -94,11 +113,19 @@ public class GameManager : MonoBehaviour, IDataPersistence
             StartCoroutine(secondCardManager.FlipCard(0f));
         }
 
+        cardFlipInfo[firstCardManager.cardIndex] = flipInfo;
+        cardFlipInfo[secondCardManager.cardIndex] = flipInfo;
+
         clickedCardsQty = 0;
         clickedCards.Clear();
 
         // temporary score
         score = matches;
+    }
+
+    public void OnGameEnded()
+    {
+        OnHomeButtonClicked();
     }
 
     public void OnHomeButtonClicked()

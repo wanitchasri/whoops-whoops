@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using System.Linq;
+using UnityEngine.SceneManagement;
 
 public class DataPersistenceManager : MonoBehaviour
 {
@@ -22,6 +23,7 @@ public class DataPersistenceManager : MonoBehaviour
         Instance = this;
     }
 
+
     private void Start()
     {
         this.dataHandler = new FileDataHandler(Application.persistentDataPath, fileName);
@@ -30,6 +32,11 @@ public class DataPersistenceManager : MonoBehaviour
     }
 
     private void OnApplicationQuit()
+    {
+        SaveGame();
+    }
+
+    public void OnHomeButtonClicked()
     {
         SaveGame();
     }

@@ -9,7 +9,7 @@ public class GameData
     public int matches;
     public int turns;
     public List<Sprite> cardPictures;
-    public List<int> cardMatchInfo;
+    public List<int> cardFlipInfo;
 
     // default values
     public GameData()
@@ -18,6 +18,6 @@ public class GameData
         this.matches = 0;
         this.turns = 0;
         this.cardPictures = new List<Sprite>();
-        this.cardMatchInfo = new List<int>();
+        this.cardFlipInfo = new List<int>();
     }
 }
